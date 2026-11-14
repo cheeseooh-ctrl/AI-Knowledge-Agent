@@ -1,140 +1,148 @@
 # 🪐 AI Daily Knowledge Agent (AI 每日情报知识管家)
 
-> 每日自动化追踪全球 AI 前沿动态，经过智能清洗与大模型深度提炼，沉淀为高质量知识库与日报。
+> 每日全自动追踪全球 AI 前沿动态，经过多智能体路由协同、恶魔质检对抗打磨，沉淀为高质量结构化知识库。
+
+[![Version](https://img.shields.io/badge/version-v1.1.0-blue.svg)](https://github.com/cheeseooh-ctrl/AI-Knowledge-Agent)
+[![Python](https://img.shields.io/badge/python-3.9+-green.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-purple.svg)](LICENSE)
 
 ---
 
-## 🌟 核心特性
+## 📌 版本演进与更新日志 (Changelog)
 
-- **多维权威信源矩阵**：
-  - 💬 **Hacker News**：挖掘全球极客对 AI/LLM 的高分深度讨论与冷静评测。
-  - 📄 **Hugging Face Daily Papers**：追踪每日最新学术突破与算法论文榜单。
-  - 🛠️ **GitHub Trending**：自动发现过去几天最火的开源 AI Agent、模型微调与底层工具库。
-  - 📡 **权威官方博客 RSS**：第一时间跟进 OpenAI、Google AI、Hugging Face Blog 及专家技术专栏（Simon Willison 等）。
-- **智能去噪与 LLM 提炼**：
-  - 自动 URL 规范化、去重与质量排序。
-  - 接入 **Google Gemini API**（如 `gemini-2.5-flash`），进行结构化深度提炼：总结**今日核心大势**、分析**为何重要**、提取**核心要点**与**项目亮点**。
-- **零外部必装依赖设计（Zero-Dependency Core）**：
-  - 核心网络通信与数据解析基于 Python 3.9+ 原生标准库实现，克隆即可运行；同时也支持 `pip install -r requirements.txt` 进行功能增强。
-- **本地 Markdown 知识库自动沉淀**：
-  - 每天自动将结构化日报归档至 `./reports/YYYY-MM-DD_AI_Daily_Briefing.md`。
+| 版本号 | 发布日期 | 架构类型 | 核心变更与新特性 |
+| :---: | :---: | :---: | :--- |
+| **`v1.1.0`** *(当前)* | 2026-11-14 | **多智能体动态路由架构** | 1. **引入 `AgentRouter` 调度中枢**：摆脱单一 Prompt，实现多智能体条件分发与反思回环。<br>2. **新增 `WriterAgent`**：负责第一版初稿撰写与基于反馈的二次重构。<br>3. **新增 `CriticAgent`**：设立“去公关化、实证度、落地性、辩证审视”四大苛刻维度量化打分（满分100，>=80放行）。<br>4. **支持 `--git-push`**：早报生成完毕后全自动提交并推送到 GitHub 知识库。<br>5. **新增设计文档**：归档 [`learning_notes/v1.1.0_Agent_Router_Design.md`](learning_notes/v1.1.0_Agent_Router_Design.md)。 |
+| **`v1.0.0`** | 2026-11-14 | 确定性自动化流水线 | 1. 搭建四大信源采集矩阵（Hacker News、Hugging Face Papers、GitHub Trending、权威博客 RSS）。<br>2. 实现 URL 归一化剁尾巴、多维去重与质量打分排序。<br>3. 建立零依赖 Python 原生 REST 通信机制。<br>4. 实现自动排版并归档 Markdown/JSON 日报。 |
+
+### 🚀 后续演进路线图 (Roadmap)
+* [x] **v1.0.0**：零外部依赖的高可用数据采集与清洗流水线。
+* [x] **v1.1.0**：Agent Router 驱动的“主笔 + 恶魔质检员”对抗博弈机制与 Git 自动同步。
+* [ ] **v1.2.0**：引入「深度穿透研究员 (Deep Reader)」—— 当发现重磅突破时，自主调用工具翻阅论文全文与官方技术文档。
+* [ ] **v1.3.0**：引入「个性化记忆中枢 (Memory)」—— 根据用户专属技术偏好进行千人千面的个性化过滤。
+* [ ] **v2.0.0**：接入 GitHub Actions 云端全托管，实现电脑关机状态下的免开机定时推送（邮件/飞书/企微）。
 
 ---
 
-## 🚀 快速上手
+## 🏛️ v1.1.0 核心系统架构图
 
-### 1. 配置 API Key（可选但强烈建议）
+```mermaid
+flowchart TD
+    subgraph S1["1. 多维信源采集 (Collectors)"]
+        HN["Hacker News (极客热榜)"]
+        HF["Hugging Face Papers (学术论文)"]
+        GH["GitHub Trending (开源项目)"]
+        RSS["官方博客 RSS (OpenAI/Google等)"]
+    end
 
-复制环境变量模板：
+    subgraph S2["2. 数据清洗 (Cleaner)"]
+        Clean["URL 归一化 / 标题去重 / 质量加权排序"]
+    end
+
+    subgraph S3["3. 多智能体路由编排 (Agent Router)"]
+        Router["🔀 Agent Router (中枢调度器)"]
+        Writer["✍️ Writer Agent (主笔撰稿员)"]
+        Critic["😈 Critic Agent (恶魔质检员)"]
+        
+        Router -->|分发素材| Writer
+        Writer -->|提交初稿| Router
+        Router -->|分发审查| Critic
+        Critic -->|四维打分与挑刺清单| Router
+        Router -.->|打分 < 80 逆向路由打回重写| Writer
+    end
+
+    subgraph S4["4. 呈现与云端归档 (Exporters & Git)"]
+        MD["Markdown 知识库 (./reports)"]
+        JSON["全量原始与审稿档案 JSON"]
+        GitPush["🚀 GitHub 自动同步管道"]
+    end
+
+    HN --> Clean
+    HF --> Clean
+    GH --> Clean
+    RSS --> Clean
+
+    Clean --> Router
+    Router -->|打分 >= 80 终点放行| MD
+    Router -->|同步输出| JSON
+    MD --> GitPush
+```
+
+---
+
+## 📂 工作区完整目录结构清单 (已全面同步至 v1.1.0)
+
+```
+AI Knowledge Agent/
+├── config.json                     # [v1.1.0] 全局配置文件 (信源规则、Router参数、Git推送开关)
+├── .env.example                    # 环境变量配置模板 (GEMINI_API_KEY)
+├── requirements.txt                # 可选依赖项 (requests, pyyaml, python-dotenv)
+├── run.py                          # [v1.1.0] 一键执行入口 (支持 --mock, --git-push, --test-collect)
+├── README.md                       # [v1.1.0] 本项目说明书与版本演进日志
+├── learning_notes/                 # 📚 核心设计与知识沉淀专区
+│   ├── AI_Agent_Architecture_QnA.md    # 智能体底层 12 个核心概念深度问答
+│   └── v1.1.0_Agent_Router_Design.md   # [v1.1.0] Router 编排架构与时序交互图设计文档
+├── src/
+│   ├── utils.py                    # 零依赖 HTTP 通信、证书与环境读取水电工
+│   ├── collectors/                 # 📡 4 大数据采集器
+│   │   ├── base.py                 # NewsItem 标准数据盒子与 BaseCollector 抽象基类
+│   │   ├── hackernews.py           # Hacker News Algolia 接口采集器
+│   │   ├── huggingface.py          # Hugging Face Daily Papers 论文采集器
+│   │   ├── github.py               # GitHub Trending 高星活跃开源项目采集器
+│   │   └── rss.py                  # XML 原生解析 RSS/Atom 官方广播采集器
+│   ├── processor/                  # 🧠 核心清洗与多智能体集群
+│   │   ├── cleaner.py              # URL 追踪参数剥离、去重与质量打分排序
+│   │   ├── router.py               # [v1.1.0] AgentRouter 中枢路由编排器
+│   │   ├── writer_agent.py         # [v1.1.0] WriterAgent 主笔撰稿智能体
+│   │   ├── critic_agent.py         # [v1.1.0] CriticAgent 恶魔质检评估智能体
+│   │   ├── mock_summarizer.py      # 本地单机 Mock 替身模拟器
+│   │   └── gemini_summarizer.py    # (v1.0.0 遗留兼容单次提炼器)
+│   └── exporters/                  # 📰 导出与呈现
+│       └── markdown_exporter.py    # [v1.1.0] Markdown 日报生成器 (内置虚拟编辑部质检档案徽章)
+└── reports/                        # 历史情报日报归档目录
+    ├── 2026-11-14_AI_Daily_Briefing.md
+    └── 2026-11-14_AI_Daily_Briefing.json
+```
+
+---
+
+## 🚀 快速上手使用
+
+### 1. 配置 API Key（可选但推荐）
+复制环境模板：
 ```bash
 cp .env.example .env
 ```
-编辑 `.env` 文件，填入你的 Google Gemini API Key：
+在 `.env` 中填入你的 Gemini Key（在 [Google AI Studio](https://aistudio.google.com/app/apikey) 免费申请）：
 ```env
-GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_API_KEY=your_key_here
 GEMINI_MODEL=gemini-2.5-flash
 ```
-> 💡 **如何获取免费的 Gemini API Key**：
-> 访问 [Google AI Studio](https://aistudio.google.com/app/apikey)，点击 "Create API Key" 即可免费申请。
 
-### 2. 运行生成日报
+### 2. 执行运行指令
 
-* **一键运行（完整流程：采集 → 大模型总结 → 生成归档）**：
+* **完整运行多智能体博弈（并自动同步推送至 GitHub）**：
   ```bash
-  python3 run.py
+  python3 run.py --git-push
   ```
 
-* **测试数据采集（不消耗 LLM 额度，仅测试网络与源数据）**：
-  ```bash
-  python3 run.py --test-collect
-  ```
-
-* **本地模拟模式（无 API Key 时快速体验生成效果）**：
+* **本地单机模拟模式（无需 API Key，快速体验 Router 编排流转）**：
   ```bash
   python3 run.py --mock
   ```
 
-* **指定历史日期重新生成**：
+* **仅测试底层网络采集（不调用智能体，查看抓回来的数据）**：
   ```bash
-  python3 run.py --date 2026-11-14
+  python3 run.py --test-collect
   ```
 
 ---
 
-## ⚙️ 自定义配置 (`config.json`)
+## 🛡️ 恶魔质检员的四大审计铁律
 
-你可以通过修改根目录下的 `config.json` 轻松自定义关注的领域与抓取规则：
+每一篇通过 `AgentRouter` 发布的早报，都必须满足以下四大维度的严苛考核（满分 100 分，$\ge 80$ 分放行）：
 
-```json
-{
-  "sources": {
-    "hackernews": {
-      "enabled": true,
-      "min_points": 25,
-      "keywords": ["AI", "LLM", "Agent", "Claude", "Gemini", "DeepSeek"]
-    },
-    "huggingface_papers": {
-      "enabled": true,
-      "max_items": 8
-    },
-    "github_trending": {
-      "enabled": true,
-      "topics": ["llm", "agent", "ai", "rag", "mcp"]
-    },
-    "rss_feeds": {
-      "enabled": true,
-      "feeds": [
-        {"name": "OpenAI News", "url": "https://openai.com/news/rss.xml"},
-        {"name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml"},
-        {"name": "Simon Willison Weblog", "url": "https://simonwillison.net/atom/everything/"},
-        {"name": "Google AI Blog", "url": "https://blog.google/technology/ai/rss/"}
-      ]
-    }
-  }
-}
-```
-
----
-
-## ⏰ 每日定时自动执行
-
-你可以将该脚本配置为每天早上自动执行：
-
-### 方式一：macOS / Linux 本地 Crontab（最简单稳定）
-在终端中输入 `crontab -e`，添加一条定时任务（例如每天早晨 8:30 自动生成）：
-```bash
-30 8 * * * cd "/Users/cheese/Desktop/File/AI应用搭建/AI Knowledge Agent" && /usr/bin/python3 run.py >> reports/cron.log 2>&1
-```
-
-### 方式二：在 Antigravity 中使用 `/schedule`
-在对话框中输入 `/schedule`，设定指令：
-> “每天早上 9 点运行当前工作区的 python3 run.py，并提醒我最新出炉的 AI 日报”
-
----
-
-## 📂 项目结构
-
-```
-AI Knowledge Agent/
-├── config.json               # 抓取信源与模型参数配置
-├── .env.example              # 环境变量配置模板
-├── requirements.txt          # 可选依赖
-├── run.py                    # 统一执行入口
-├── src/
-│   ├── utils.py              # 兼容标准库的 HTTP 网络库与环境加载器
-│   ├── collectors/           # 4 大信源独立采集器
-│   │   ├── base.py           # 数据模型 NewsItem 与基类
-│   │   ├── hackernews.py     # Hacker News Algolia 接口
-│   │   ├── huggingface.py    # Hugging Face Daily Papers 接口
-│   │   ├── github.py         # GitHub 开源生态搜索
-│   │   └── rss.py            # 标准 RSS/Atom 极速解析器
-│   ├── processor/            # 核心处理与 LLM 提炼
-│   │   ├── cleaner.py        # 去重与清洗
-│   │   ├── gemini_summarizer.py # Google Gemini 结构化 Prompt
-│   │   └── mock_summarizer.py   # 本地快速预览模拟器
-│   └── exporters/            # 导出与分发
-│       └── markdown_exporter.py # 生成精美排版的 Markdown 日报
-└── reports/                  # 历史日报存储归档
-    ├── 2026-11-14_AI_Daily_Briefing.md
-    └── 2026-11-14_AI_Daily_Briefing.json
-```
+1. **去公关化 (Anti-PR, 25%)**：剔除厂商洗脑宣传词，讲事实说人话。
+2. **技术实证度 (Evidence Density, 25%)**：必须包含具体参数（7B/70B）、跑分（MMLU）或架构机制。
+3. **落地启发性 (Actionability, 25%)**：明确对开发者与业务架构的具体实操意义。
+4. **辩证审视度 (Critical Balance, 25%)**：科技皆有两面性，必须指出显存瓶颈、时延或闭源风险。
