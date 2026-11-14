@@ -2,6 +2,11 @@
 
 > 📡 **自动聚合与提炼**：覆盖 Hacker News、Hugging Face Papers、GitHub 开源、官方权威发布 | 精选收录 **14** 条动态
 
+> [!TIP]
+> 🛡️ **虚拟编辑部审稿档案**：综合严谨度评分 **`88 / 100`** ｜ 经历 **`1 轮`** 主笔与恶魔质检员博弈打磨
+> * 去公关化: `90分` ｜ 技术实证度: `85分` ｜ 落地启发性: `88分` ｜ 辩证审视: `88分`
+> * 总编评语: *"保持精炼专业，注意多模态延伸。"*
+
 > [!IMPORTANT]
 > **今日核心风向**：【预览演示模式】今日 AI 领域涵盖了学术前沿突破、热门开源智能体项目以及开发者社区深度实测。
 
@@ -37,16 +42,16 @@
 
 ## 🛠️ 2. 热门开源项目与智能体框架
 
-* **[bytedance/deer-flow (⭐️ 85,324)](https://github.com/bytedance/deer-flow)** `⭐️ 85324` 
-  [Python] ⭐️ 85,324 stars - An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.
-* **[unslothai/unsloth (⭐️ 79,473)](https://github.com/unslothai/unsloth)** `⭐️ 79473` 
-  [Python] ⭐️ 79,473 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.
-* **[AstrBotDevs/AstrBot (⭐️ 46,885)](https://github.com/AstrBotDevs/AstrBot)** `⭐️ 46885` 
-  [Python] ⭐️ 46,885 stars - AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨
-* **[dataelement/bisheng (⭐️ 12,314)](https://github.com/dataelement/bisheng)** `⭐️ 12314` 
-  [Python] ⭐️ 12,314 stars - BISHENG is an open-source enterprise Agent platform for building, deploying, and managing AI applications. It combines AI agents, workflows, RAG and knowledge management, desktop agent integration, and vibecoding app hosting with unified model management, evaluation, observability, access control, and enterprise administration.
-* **[langchain-ai/open-swe (⭐️ 11,222)](https://github.com/langchain-ai/open-swe)** `⭐️ 11222` 
-  [Python] ⭐️ 11,222 stars - An Open-Source Asynchronous Coding Agent
+* **[langgenius/dify (⭐️ 161,140)](https://github.com/langgenius/dify)** `⭐️ 161140` 
+  [Python] ⭐️ 161,140 stars - Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
+* **[bytedance/deer-flow (⭐️ 85,326)](https://github.com/bytedance/deer-flow)** `⭐️ 85326` 
+  [Python] ⭐️ 85,326 stars - An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.
+* **[unslothai/unsloth (⭐️ 79,476)](https://github.com/unslothai/unsloth)** `⭐️ 79476` 
+  [Python] ⭐️ 79,476 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.
+* **[Prism-Shadow/penguin-harness (⭐️ 3,235)](https://github.com/Prism-Shadow/penguin-harness)** `⭐️ 3235` 
+  [TypeScript] ⭐️ 3,235 stars - 🐧 Unified and Stable RSI Platform
+* **[avibe-bot/avibe (⭐️ 640)](https://github.com/avibe-bot/avibe)** `⭐️ 640` 
+  [Python] ⭐️ 640 stars - Make your computer a home for your AI partner. Avibe is the local-first Agent OS: Vibey, its built-in AI partner, works out of the box, and Claude Code, Codex & OpenCode run unchanged beside it — reach them from your browser, phone, or any chat app.
 
 ## 📄 3. 必读前沿学术论文 (Hugging Face Papers)
 
@@ -65,4 +70,4 @@
   HN 讨论热度: 280 点赞 / 118 条评论。讨论链接: https://news.ycombinator.com/item?id=48883305
 
 ---
-*Generated automatically by AI Knowledge Agent at 2026-11-14 00:55:29*
+*Generated automatically by AI Knowledge Agent (v1.1.0 Multi-Agent Editorial Board) at 2026-11-14 02:22:46*

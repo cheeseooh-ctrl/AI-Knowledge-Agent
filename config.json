@@ -1,6 +1,6 @@
 {
   "project_name": "AI Daily Knowledge Agent",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "sources": {
     "hackernews": {
       "enabled": true,
@@ -56,15 +56,21 @@
       ]
     }
   },
+  "editorial_board": {
+    "enabled": true,
+    "pass_threshold": 80,
+    "max_revision_rounds": 2
+  },
   "summarizer": {
     "default_model": "gemini-2.5-flash",
     "fallback_model": "gemini-2.0-flash",
-    "temperature": 0.2,
+    "temperature": 0.25,
     "max_output_tokens": 4096
   },
   "output": {
     "dir": "./reports",
     "filename_format": "{date}_AI_Daily_Briefing.md",
-    "save_raw_json": true
+    "save_raw_json": true,
+    "git_auto_push": false
   }
 }

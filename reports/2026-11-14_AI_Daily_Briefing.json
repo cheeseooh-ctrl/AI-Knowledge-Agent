@@ -48,34 +48,34 @@
   ],
   "open_source_tools": [
     {
-      "name": "bytedance/deer-flow (⭐️ 85,324)",
+      "name": "langgenius/dify (⭐️ 161,140)",
+      "url": "https://github.com/langgenius/dify",
+      "stars_or_tag": "⭐️ 161140",
+      "description": "[Python] ⭐️ 161,140 stars - Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack."
+    },
+    {
+      "name": "bytedance/deer-flow (⭐️ 85,326)",
       "url": "https://github.com/bytedance/deer-flow",
-      "stars_or_tag": "⭐️ 85324",
-      "description": "[Python] ⭐️ 85,324 stars - An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
+      "stars_or_tag": "⭐️ 85326",
+      "description": "[Python] ⭐️ 85,326 stars - An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
     },
     {
-      "name": "unslothai/unsloth (⭐️ 79,473)",
+      "name": "unslothai/unsloth (⭐️ 79,476)",
       "url": "https://github.com/unslothai/unsloth",
-      "stars_or_tag": "⭐️ 79473",
-      "description": "[Python] ⭐️ 79,473 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
+      "stars_or_tag": "⭐️ 79476",
+      "description": "[Python] ⭐️ 79,476 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
     },
     {
-      "name": "AstrBotDevs/AstrBot (⭐️ 46,885)",
-      "url": "https://github.com/AstrBotDevs/AstrBot",
-      "stars_or_tag": "⭐️ 46885",
-      "description": "[Python] ⭐️ 46,885 stars - AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
+      "name": "Prism-Shadow/penguin-harness (⭐️ 3,235)",
+      "url": "https://github.com/Prism-Shadow/penguin-harness",
+      "stars_or_tag": "⭐️ 3235",
+      "description": "[TypeScript] ⭐️ 3,235 stars - 🐧 Unified and Stable RSI Platform"
     },
     {
-      "name": "dataelement/bisheng (⭐️ 12,314)",
-      "url": "https://github.com/dataelement/bisheng",
-      "stars_or_tag": "⭐️ 12314",
-      "description": "[Python] ⭐️ 12,314 stars - BISHENG is an open-source enterprise Agent platform for building, deploying, and managing AI applications. It combines AI agents, workflows, RAG and knowledge management, desktop agent integration, and vibecoding app hosting with unified model management, evaluation, observability, access control, and enterprise administration."
-    },
-    {
-      "name": "langchain-ai/open-swe (⭐️ 11,222)",
-      "url": "https://github.com/langchain-ai/open-swe",
-      "stars_or_tag": "⭐️ 11222",
-      "description": "[Python] ⭐️ 11,222 stars - An Open-Source Asynchronous Coding Agent"
+      "name": "avibe-bot/avibe (⭐️ 640)",
+      "url": "https://github.com/avibe-bot/avibe",
+      "stars_or_tag": "⭐️ 640",
+      "description": "[Python] ⭐️ 640 stars - Make your computer a home for your AI partner. Avibe is the local-first Agent OS: Vibey, its built-in AI partner, works out of the box, and Claude Code, Codex & OpenCode run unchanged beside it — reach them from your browser, phone, or any chat app."
     }
   ],
   "trending_papers": [
@@ -110,5 +110,17 @@
       "url": "https://github.com/juggler-ai/juggler",
       "summary": "HN 讨论热度: 280 点赞 / 118 条评论。讨论链接: https://news.ycombinator.com/item?id=48883305"
     }
-  ]
+  ],
+  "audit_report": {
+    "overall_score": 88,
+    "rounds": 1,
+    "dimension_scores": {
+      "anti_pr": 90,
+      "evidence_density": 85,
+      "actionability": 88,
+      "critical_balance": 88
+    },
+    "critique_summary": "【单机模拟模式】已通过本地规则化审稿，格式完全符合发布规范。",
+    "general_advice": "保持精炼专业，注意多模态延伸。"
+  }
 }
