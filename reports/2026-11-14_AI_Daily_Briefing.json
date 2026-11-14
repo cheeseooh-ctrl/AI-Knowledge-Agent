@@ -1,0 +1,114 @@
+{
+  "daily_focus": "【预览演示模式】今日 AI 领域涵盖了学术前沿突破、热门开源智能体项目以及开发者社区深度实测。",
+  "breakthroughs": [
+    {
+      "title": "datasette-cluster-map 0.19",
+      "original_title": "datasette-cluster-map 0.19",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "datasette-leaflet 0.3",
+      "original_title": "datasette-leaflet 0.3",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "llm-gemini 0.37",
+      "original_title": "llm-gemini 0.37",
+      "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "Introducing ChatGPT Wallet",
+      "original_title": "Introducing ChatGPT Wallet",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "source": "OpenAI News",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete pur",
+        "来自权威发布渠道：OpenAI News"
+      ]
+    }
+  ],
+  "open_source_tools": [
+    {
+      "name": "bytedance/deer-flow (⭐️ 85,324)",
+      "url": "https://github.com/bytedance/deer-flow",
+      "stars_or_tag": "⭐️ 85324",
+      "description": "[Python] ⭐️ 85,324 stars - An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
+    },
+    {
+      "name": "unslothai/unsloth (⭐️ 79,473)",
+      "url": "https://github.com/unslothai/unsloth",
+      "stars_or_tag": "⭐️ 79473",
+      "description": "[Python] ⭐️ 79,473 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
+    },
+    {
+      "name": "AstrBotDevs/AstrBot (⭐️ 46,885)",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "stars_or_tag": "⭐️ 46885",
+      "description": "[Python] ⭐️ 46,885 stars - AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
+    },
+    {
+      "name": "dataelement/bisheng (⭐️ 12,314)",
+      "url": "https://github.com/dataelement/bisheng",
+      "stars_or_tag": "⭐️ 12314",
+      "description": "[Python] ⭐️ 12,314 stars - BISHENG is an open-source enterprise Agent platform for building, deploying, and managing AI applications. It combines AI agents, workflows, RAG and knowledge management, desktop agent integration, and vibecoding app hosting with unified model management, evaluation, observability, access control, and enterprise administration."
+    },
+    {
+      "name": "langchain-ai/open-swe (⭐️ 11,222)",
+      "url": "https://github.com/langchain-ai/open-swe",
+      "stars_or_tag": "⭐️ 11222",
+      "description": "[Python] ⭐️ 11,222 stars - An Open-Source Asynchronous Coding Agent"
+    }
+  ],
+  "trending_papers": [
+    {
+      "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+      "original_title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+      "url": "https://huggingface.co/papers/2611.15777",
+      "takeaway": "论文摘要: System One models promise fast, general-purpose decision-making without lengthy token generation. However, understanding their capability spectrum and decision reliability requires more than aggregate performance on current benchmarks. Existing ev... (HF Upvotes: 83)"
+    },
+    {
+      "title": "BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model",
+      "original_title": "BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model",
+      "url": "https://huggingface.co/papers/2611.14815",
+      "takeaway": "论文摘要: Driving world models aim to simulate how a scene unfolds under different ego actions. This requires plausible motion of surrounding vehicles as well as precise ego-trajectory control. Learning vehicle motion from perspective video alone is challen... (HF Upvotes: 49)"
+    },
+    {
+      "title": "Scaling Mathematical Proof Supervision from Structured Textbooks",
+      "original_title": "Scaling Mathematical Proof Supervision from Structured Textbooks",
+      "url": "https://huggingface.co/papers/2610.40394",
+      "takeaway": "论文摘要: Mathematical supervision for language models is typically flattened into isolated problem-solution pairs, discarding the curricular organization and evidential structure of the original sources. We introduce TOME-Math (Textbook-Oriented Mathematic... (HF Upvotes: 45)"
+    },
+    {
+      "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+      "original_title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+      "url": "https://huggingface.co/papers/2611.16748",
+      "takeaway": "论文摘要: Video generation models produce visually realistic videos but still struggle with physical dynamics and causal consistency. Learning from generated videos requires fine-grained physical supervision, yet reliable quality judgments, correction pairs... (HF Upvotes: 44)"
+    }
+  ],
+  "hot_discussions": [
+    {
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "summary": "HN 讨论热度: 280 点赞 / 118 条评论。讨论链接: https://news.ycombinator.com/item?id=48883305"
+    }
+  ]
+}

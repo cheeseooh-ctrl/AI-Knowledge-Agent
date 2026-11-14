@@ -1,0 +1,70 @@
+{
+  "project_name": "AI Daily Knowledge Agent",
+  "version": "1.0.0",
+  "sources": {
+    "hackernews": {
+      "enabled": true,
+      "min_points": 25,
+      "max_items": 10,
+      "keywords": [
+        "AI",
+        "LLM",
+        "Agent",
+        "GPT",
+        "Claude",
+        "Gemini",
+        "DeepSeek",
+        "Llama",
+        "Mistral",
+        "OpenAI",
+        "Anthropic",
+        "GPU",
+        "Nvidia",
+        "diffusion",
+        "reasoning"
+      ]
+    },
+    "huggingface_papers": {
+      "enabled": true,
+      "max_items": 8
+    },
+    "github_trending": {
+      "enabled": true,
+      "max_items": 6,
+      "topics": ["llm", "agent", "ai", "rag", "mcp"]
+    },
+    "rss_feeds": {
+      "enabled": true,
+      "max_items_per_feed": 3,
+      "feeds": [
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/news/rss.xml"
+        },
+        {
+          "name": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/feed.xml"
+        },
+        {
+          "name": "Simon Willison Weblog",
+          "url": "https://simonwillison.net/atom/everything/"
+        },
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/rss/"
+        }
+      ]
+    }
+  },
+  "summarizer": {
+    "default_model": "gemini-2.5-flash",
+    "fallback_model": "gemini-2.0-flash",
+    "temperature": 0.2,
+    "max_output_tokens": 4096
+  },
+  "output": {
+    "dir": "./reports",
+    "filename_format": "{date}_AI_Daily_Briefing.md",
+    "save_raw_json": true
+  }
+}
