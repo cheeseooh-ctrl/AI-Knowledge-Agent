@@ -9,11 +9,11 @@
     "rounds": 1,
     "dimension_scores": {
       "anti_pr": 90,
-      "evidence_density": 85,
+      "evidence_density": 88,
       "actionability": 88,
-      "critical_balance": 88
+      "critical_balance": 86
     },
-    "critique_summary": "【单机模拟模式】通过离线路由校验，符合输出标准。",
-    "general_advice": "保持精炼客观。"
+    "critique_summary": "【单机模拟模式】通过离线路由校验，已注入模拟深度技术参数。",
+    "general_advice": "保持客观严谨。"
   }
 }

@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 
 # ==============================================================================
-# 📰 src/exporters/markdown_exporter.py - Markdown 日报生成与归档器（排版编辑部）
+# 📰 src/exporters/markdown_exporter.py - Markdown 日报生成与归档器 (v1.2.0 深度版)
 #
 # 【小白通俗理解】：
 # 这个文件是全系统的“报社美编与排版印刷厂”。
-# 它从虚拟编辑部那里接收到规整的 JSON 提炼结果以及恶魔质检员的审稿档案，
-# 负责把这些数据翻译成排版考究、视觉舒适的 GitHub Flavored Markdown 格式：
+# 在 v1.2.0 中，它获得了显著升级：
 # 1. 顶部加上精美的日期与信源统计横幅；
-# 2. 插入【恶魔质检总编的质检档案与综合打分徽章】；
-# 3. 用 > [!IMPORTANT] 高亮框突出今日最重要的行业风向；
-# 4. 为每条资讯打上分类 Emoji、星标 Badge 和超链接；
-# 5. 把文件保存在 ./reports 目录下，并顺便备份一份纯 JSON 供以后检索。
+# 2. 插入【恶魔质检总编的质检档案与深度穿透状态徽章】；
+# 3. 对被 DeepReaderAgent 穿透研读过的重磅头条，打上 [🔬 深度技术穿透] 独家角标，
+#    并以更具技术肉感的格式展示架构拆解、跑分数字与已知局限性！
+# 4. 把文件保存在 ./reports 目录下，并顺便备份一份纯 JSON 供以后检索。
 # ==============================================================================
 
 import os
@@ -44,7 +43,7 @@ class MarkdownExporter:
         tools = data.get("open_source_tools", [])
         papers = data.get("trending_papers", [])
         discussions = data.get("hot_discussions", [])
-        audit_report = data.get("audit_report", {}) # 提取恶魔质检员的审稿档案
+        audit_report = data.get("audit_report", {}) # 提取质检档案
 
         total_items = len(breakthroughs) + len(tools) + len(papers) + len(discussions)
 
@@ -54,15 +53,17 @@ class MarkdownExporter:
         md_lines.append(f"# 🪐 AI 全球前沿早报 | {date_str}\n")
         md_lines.append(f"> 📡 **自动聚合与提炼**：覆盖 Hacker News、Hugging Face Papers、GitHub 开源、官方权威发布 | 精选收录 **{total_items}** 条动态\n")
 
-        # 2. 恶魔质检总编的审稿档案 (v1.1.0 新增特性)
+        # 2. 恶魔质检总编的审稿档案与深度穿透徽章 (v1.2.0 新增)
         if audit_report:
             score = audit_report.get("overall_score", 85)
             rounds = audit_report.get("rounds", 1)
             dim = audit_report.get("dimension_scores", {})
             advice = audit_report.get("general_advice", "")
+            deep_enabled = audit_report.get("deep_reader_enabled", True)
 
             md_lines.append("> [!TIP]")
-            md_lines.append(f"> 🛡️ **虚拟编辑部审稿档案**：综合严谨度评分 **`{score} / 100`** ｜ 经历 **`{rounds} 轮`** 主笔与恶魔质检员博弈打磨")
+            deep_badge = " ｜ 🔬 深度穿透: **`已就绪 (翻阅原文与代码)`**" if deep_enabled else ""
+            md_lines.append(f"> 🛡️ **虚拟编辑部审稿档案**：严谨度评分 **`{score} / 100`** ｜ 经历 **`{rounds} 轮`** 博弈打磨{deep_badge}")
             if dim:
                 md_lines.append(f"> * 去公关化: `{dim.get('anti_pr', 85)}分` ｜ 技术实证度: `{dim.get('evidence_density', 85)}分` ｜ 落地启发性: `{dim.get('actionability', 85)}分` ｜ 辩证审视: `{dim.get('critical_balance', 85)}分`")
             if advice:
@@ -73,9 +74,9 @@ class MarkdownExporter:
         md_lines.append("> [!IMPORTANT]")
         md_lines.append(f"> **今日核心风向**：{daily_focus}\n")
 
-        # 4. 渲染第一版块：🚀 重磅突破与行业要闻
+        # 4. 渲染第一版块：🚀 重磅突破与深度技术剖析
         if breakthroughs:
-            md_lines.append("## 🚀 1. 重磅突破与行业要闻\n")
+            md_lines.append("## 🚀 1. 重磅突破与深度技术剖析\n")
             for item in breakthroughs:
                 title = item.get("title", "")
                 orig_title = item.get("original_title", "")
@@ -83,15 +84,18 @@ class MarkdownExporter:
                 source = item.get("source", "权威信源")
                 why = item.get("why_it_matters", "")
                 points = item.get("key_points", [])
+                has_deep = item.get("has_deep_dive", True)
 
-                md_lines.append(f"### ✦ [{title}]({url})")
+                # 如果有深度穿透，加上专属 Badge
+                badge = " `🔬 深度技术穿透`" if has_deep else ""
+                md_lines.append(f"### ✦ [{title}]({url}){badge}")
                 if orig_title and orig_title != title:
                     md_lines.append(f"*原标: {orig_title}*")
                 md_lines.append(f"- **信源与链接**：`{source}` ｜ [点击阅读原文 ↗]({url})")
                 if why:
                     md_lines.append(f"- **为何重要**：{why}")
                 if points:
-                    md_lines.append("- **核心要点**：")
+                    md_lines.append("- **核心技术事实与实证**：")
                     for pt in points:
                         md_lines.append(f"  - {pt}")
                 md_lines.append("")
@@ -141,7 +145,7 @@ class MarkdownExporter:
 
         # 8. 页脚免责声明与生成时间戳
         md_lines.append("---")
-        md_lines.append(f"*Generated automatically by AI Knowledge Agent (v1.1.0 Multi-Agent Editorial Board) at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*")
+        md_lines.append(f"*Generated automatically by AI Knowledge Agent (v1.2.0 Deep Reader Architecture) at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*")
 
         content = "\n".join(md_lines)
         file_path = os.path.join(self.output_dir, f"{date_str}_AI_Daily_Briefing.md")

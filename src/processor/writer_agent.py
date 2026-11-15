@@ -6,7 +6,8 @@
 # 【小白通俗理解】：
 # 在虚拟报社编辑部中，Writer Agent 是“科技主笔记者”。
 # 它的核心职责：
-# 1. 负责初稿撰写：通读清洗后的海量原始动态，用生动专业的技术语言撰写第一版草稿。
+# 1. 负责初稿撰写：通读原始素材（特别是包含 Deep Reader 挖掘出来的深度正文细节），
+#    用生动专业的技术语言撰写第一版草稿。
 # 2. 负责修改重写：当后面的“恶魔质检员 (Critic Agent)”对草稿提出挑刺和修改意见时，
 #    主笔必须虚心接受批评，针对性地补充实测数据、删掉夸大其词的公关词汇，完成二次打磨。
 # ==============================================================================
@@ -33,27 +34,34 @@ class WriterAgent:
     def _build_draft_prompt(self, items: List[NewsItem]) -> str:
         """
         构建初稿撰写的提示词。
+        自动整合 DeepReaderAgent 穿透挖掘出的深度技术架构、实测跑分与缺陷局限。
         """
         condensed_items = []
         for i, item in enumerate(items, 1):
-            condensed_items.append({
+            entry = {
                 "id": i,
                 "title": item.title,
                 "url": item.url,
                 "source": item.source,
                 "score": item.score,
                 "snippet": item.summary[:300] if item.summary else "",
-            })
+            }
+            # 如果深度穿透研究员已经扒到了网页全文硬核真相，直接注入给主笔
+            if "deep_research" in item.metadata:
+                entry["deep_technical_facts"] = item.metadata["deep_research"]
+
+            condensed_items.append(entry)
 
         prompt = f"""你是一家全球顶级技术媒体的【资深科技主笔记者】。
-你的任务是将以下今天搜集到的原始 AI 动态，撰写成一份高质量、有深度、易读的【今日 AI 每日简报】初稿。
+你的任务是将以下今天搜集到的 AI 动态（部分重要项目已附带【深度穿透硬核细节 deep_technical_facts】），
+撰写成一份高质量、有深度、易读的【今日 AI 每日简报】初稿。
 
 【输入素材列表】：
 {json.dumps(condensed_items, ensure_ascii=False, indent=2)}
 
-【撰写要求】：
-1. 严禁空洞的公关辞令：少用“史诗级”、“颠覆全行业”等虚词，多讲实际技术方案与架构改变。
-2. 提炼核心价值：明确说明这项技术对真实世界中的开发者或企业有什么实质启发。
+【撰写特别要求】：
+1. 优先消化深度事实：对于带有 `deep_technical_facts` 的条目，必须将具体跑分数字、底层架构创新与已知缺陷/局限性自然地融合进 key_points 和 why_it_matters 中！
+2. 严禁空洞的公关辞令：少用“史诗级”、“颠覆全行业”等虚词，多讲实际技术方案与架构改变。
 3. 严格以 JSON 格式输出，不要包含任何闲聊开场白。
 
 【JSON 必须符合以下结构】：
@@ -65,11 +73,13 @@ class WriterAgent:
       "original_title": "英文原标题",
       "url": "原文链接",
       "source": "信源",
-      "why_it_matters": "核心价值与行业影响",
+      "why_it_matters": "核心价值与行业影响（结合实测数据说明为什么值得关注）",
       "key_points": [
-        "技术要点1",
-        "技术要点2"
-      ]
+        "核心架构与机制要点",
+        "实测跑分/参数/硬件指标",
+        "已知短板与局限性思考"
+      ],
+      "has_deep_dive": true
     }}
   ],
   "open_source_tools": [
@@ -151,7 +161,7 @@ class WriterAgent:
 
     def write_draft(self, items: List[NewsItem]) -> Optional[Dict[str, Any]]:
         """动作 1：撰写初稿"""
-        logger.info("主笔记者 (Writer Agent) 正在通读素材并撰写第一版草稿...")
+        logger.info("主笔记者 (Writer Agent) 正在吸收素材与深度穿透事实，撰写第一版草稿...")
         prompt = self._build_draft_prompt(items)
         return self._call_gemini(prompt)
 
