@@ -12,7 +12,7 @@
 
 | 版本号 | 发布日期 | 架构类型 | 核心变更与新特性 |
 | :---: | :---: | :---: | :--- |
-| **`v1.3.0`** *(当前)* | 2026-11-14 | **个性化记忆驱动智能体** | 1. **引入 `MemoryManager` 记忆中枢**：摆脱无状态失忆缺陷，实现双层记忆架构（语义用户画像 + 14 天情景历史记忆）。<br>2. **跨天防炒冷饭机制**：基于 MD5 语义指纹自动识别最近 14 天已报内容，压制重复霸榜老线索。<br>3. **专属画像动态加权**：支持在 `config.json` 或 `data/memory/user_profile.json` 中配置技术偏好（如 Agent, MCP, 本地模型），命中关键词享受阶梯式提权，排斥纯公关/纯融资话题。<br>4. **支持记忆运维**：提供 `--no-memory`（跳过记忆）和 `--clear-memory`（一键清空记忆缓存）指令。<br>5. **新增设计文档**：归档 [`learning_notes/v1.3.0_Personalized_Memory_Agent_Design.md`](learning_notes/v1.3.0_Personalized_Memory_Agent_Design.md)。 |
+| **`v1.3.0`** *(当前)* | 2026-11-14 | **个性化记忆驱动智能体** | 1. **引入 `MemoryManager` 记忆中枢**：摆脱无状态失忆缺陷，实现双层记忆架构（语义用户画像 + 14 天情景历史记忆）。<br>2. **跨天防炒冷饭机制**：基于 MD5 语义指纹自动识别最近 14 天已报内容，压制重复霸榜老线索。<br>3. **专属画像动态加权**：支持在 `config.json` 或 `data/memory/user_profile.json` 中配置技术偏好（如 Agent, MCP, 本地模型），命中关键词享受阶梯式提权，排斥纯公关/纯融资话题。<br>4. **支持记忆运维**：提供 `--no-memory`（跳过记忆）和 `--clear-memory`（一键清空记忆缓存）指令。<br>5. **建立专门 docs/ 目录**：归档完整的系统需求与设计说明书 [`docs/SYSTEM_DESIGN.md`](docs/SYSTEM_DESIGN.md) 以及各版本设计文档 [`docs/v1.3.0_Personalized_Memory_Agent_Design.md`](docs/v1.3.0_Personalized_Memory_Agent_Design.md)。 |
 | **`v1.2.0`** | 2026-11-14 | 深度穿透认知智能体 | 1. 引入 `DeepReaderAgent` 深度穿透研究员与 `WebReaderTool` 专用工具链，自主翻阅 5000+ 字官方正文与 GitHub README。<br>2. 提炼底层架构细节、实测跑分指标、开发者实操价值与作者自承已知局限四大硬核事实。<br>3. 早报新增 `[🔬 深度技术穿透]` 专属角标。 |
 | **`v1.1.0`** | 2026-11-14 | 多智能体动态路由架构 | 1. 引入 `AgentRouter` 调度中枢，实现多智能体条件分发与反思回环。<br>2. 新增 `WriterAgent`（初稿与改版）与 `CriticAgent`（四维量化打分，>=80分放行）。<br>3. 新增 `--git-push` 自动同步至 GitHub 远端知识库。 |
 | **`v1.0.0`** | 2026-11-14 | 确定性自动化流水线 | 1. 搭建四大信源采集矩阵（HN, HF Papers, GitHub Trending, RSS）。<br>2. 实现 URL 归一化与去重清洗。<br>3. 建立零依赖 Python 原生 REST 通信机制与基础 Markdown 导出。 |
@@ -100,11 +100,13 @@ AI Knowledge Agent/
 │   └── memory/                     # 记忆持久化库
 │       ├── user_profile.json       # 用户专属技术画像配置
 │       └── reported_history.json   # 14 天内已报道线索的指纹记忆库
-├── learning_notes/                 # 📚 核心设计与知识沉淀专区
-│   ├── AI_Agent_Architecture_QnA.md    # 智能体底层 12 个核心概念深度问答
+├── docs/                           # 📐 系统设计规范与需求说明书 (PRD & TDD)
+│   ├── SYSTEM_DESIGN.md            # 系统完整设计与需求规格说明书 (PRD + 认知系统架构总纲)
 │   ├── v1.1.0_Agent_Router_Design.md   # [v1.1.0] Router 编排架构与时序图设计文档
 │   ├── v1.2.0_Deep_Reader_Agent_Design.md # [v1.2.0] 深度穿透研究员与工具链设计文档
 │   └── v1.3.0_Personalized_Memory_Agent_Design.md # [v1.3.0] 个性化双层记忆中枢设计文档
+├── learning_notes/                 # 💡 技术学习笔记与知识沉淀专区 (非设计文档)
+│   └── AI_Agent_Architecture_QnA.md    # 智能体底层 12 个核心概念深度问答
 ├── src/
 │   ├── utils.py                    # 零依赖 HTTP 通信与环境读取工具
 │   ├── tools/                      # 🛠️ 专用工具链
