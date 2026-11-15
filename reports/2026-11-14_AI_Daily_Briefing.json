@@ -13,7 +13,9 @@
       "actionability": 88,
       "critical_balance": 86
     },
-    "critique_summary": "【单机模拟模式】通过离线路由校验，已注入模拟深度技术参数。",
-    "general_advice": "保持客观严谨。"
+    "critique_summary": "【单机模拟模式】通过离线路由校验，符合用户画像偏好。",
+    "general_advice": "保持客观严谨。",
+    "user_role": "AI 架构师 / 全栈开发者",
+    "suppressed_repeats": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "project_name": "AI Daily Knowledge Agent",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "sources": {
     "hackernews": {
       "enabled": true,
@@ -54,6 +54,29 @@
           "url": "https://blog.google/technology/ai/rss/"
         }
       ]
+    }
+  },
+  "memory": {
+    "enabled": true,
+    "history_retention_days": 14,
+    "user_profile": {
+      "role": "AI 架构师 / 全栈开发者",
+      "interests": [
+        "agent",
+        "mcp",
+        "local-models",
+        "rag",
+        "open-source",
+        "tool-use"
+      ],
+      "disliked_topics": [
+        "crypto",
+        "nft",
+        "funding-only",
+        "metaverse",
+        "web3"
+      ],
+      "tone_preference": "极客硬核、重实战、无公关套话"
     }
   },
   "deep_reader": {

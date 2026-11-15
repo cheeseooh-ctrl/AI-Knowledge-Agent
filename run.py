@@ -2,17 +2,19 @@
 # -*- coding: utf-8 -*-
 
 # ==============================================================================
-# 🎯 run.py - 项目的主入口脚本 (v1.2.0 Deep Reader 深度穿透版)
+# 🎯 run.py - 项目的主入口脚本 (v1.3.0 个性化记忆中枢版)
 #
 # 【小白通俗理解】：
 # 这个文件是总调度指挥中心。
-# 在 v1.2.0 中，核心升级如下：
+# 在 v1.3.0 中，核心升级如下：
 # 1. 组建采集队伍（HN, HF, GitHub, RSS）
 # 2. 调度清洗模块（Cleaner 去重归一化）
 # 3. 呼叫核心路由器（Agent Router）：
-#    - 自动筛选 Top 3 重磅线索，派出 DeepReaderAgent 穿透翻阅网页全文与代码 README；
-#    - 组织 Writer Agent 与 Critic Agent 基于一手硬核事实进行多轮博弈打磨；
-# 4. 调度排版器（Markdown 导出）：为深度研读条目打上专属角标并格式化呈现；
+#    - 调取记忆中枢 (MemoryManager)：压制近 14 天重复报道的老新闻，按读者画像加权提权；
+#    - 挑选 Top 3 重磅线索，派出 DeepReaderAgent 穿透翻阅网页全文与代码 README；
+#    - 组织 Writer Agent 与 Critic Agent 基于读者画像文风与一手事实进行博弈打磨；
+#    - 审核定稿后，自动将今天发布的条目登记入长期记忆库，供明天比对！
+# 4. 调度排版器（Markdown 导出）：渲染包含【记忆画像与防炒冷饭卡片】的早报；
 # 5. 可选自动将当天产出的早报同步推送到 GitHub 云端知识库。
 # ==============================================================================
 
@@ -44,7 +46,7 @@ def auto_git_push(report_file: str, date_str: str):
     print("\n📦 正在将今日早报自动同步推送至 GitHub 远端知识库...")
     try:
         subprocess.run(["git", "add", "reports/"], check=True, capture_output=True)
-        commit_msg = f"docs: 自动同步 {date_str} AI 每日情报早报 [v1.2.0 Deep Reader]"
+        commit_msg = f"docs: 自动同步 {date_str} AI 每日情报早报 [v1.3.0 Memory Edition]"
         subprocess.run(["git", "commit", "-m", commit_msg], check=True, capture_output=True)
         subprocess.run(["git", "push", "origin", "main"], check=True, capture_output=True, text=True)
         print("🚀 GitHub 云端知识库同步成功！可在网页端即时查看。")
@@ -57,10 +59,19 @@ def run_pipeline(
     test_collect: bool = False,
     git_push: bool = False,
     no_deep: bool = False,
+    no_memory: bool = False,
+    clear_memory: bool = False,
     date_str: str = None,
     config_path: str = "config.json"
 ):
     """执行 AI Knowledge Agent 每日流水线"""
+    # 0. 如果用户要求清理记忆缓存
+    if clear_memory:
+        history_file = "./data/memory/reported_history.json"
+        if os.path.exists(history_file):
+            os.remove(history_file)
+            print("🧹 已成功清空历史报道记忆库缓存！")
+
     env_vars = load_env(".env")
     config = load_config(config_path)
 
@@ -71,7 +82,7 @@ def run_pipeline(
         date_str = datetime.now().strftime("%Y-%m-%d")
 
     print("\n" + "=" * 65)
-    print(f"🔬 AI Knowledge Agent [v1.2.0 深度穿透版] 启动 | {date_str}")
+    print(f"🧠 AI Knowledge Agent [v1.3.0 个性化记忆版] 启动 | {date_str}")
     print("=" * 65 + "\n")
 
     # 1. 组建采集队伍
@@ -112,7 +123,7 @@ def run_pipeline(
         print("\n测试采集结束。")
         return
 
-    # 4. 多智能体核心路由与深度穿透调度 (Agent Router)
+    # 4. 多智能体核心路由、深度穿透与记忆调度 (Agent Router)
     router_cfg = config.get("router", {})
     pass_threshold = router_cfg.get("pass_threshold", 80)
     max_rounds = router_cfg.get("max_revision_rounds", 2)
@@ -121,6 +132,11 @@ def run_pipeline(
     deep_enabled = deep_cfg.get("enabled", True) and (not no_deep)
     max_deep_items = deep_cfg.get("max_deep_items", 3)
 
+    memory_cfg = config.get("memory", {})
+    memory_enabled = memory_cfg.get("enabled", True) and (not no_memory)
+    user_profile = memory_cfg.get("user_profile", None)
+    retention_days = memory_cfg.get("history_retention_days", 14)
+
     # 实例化中枢路由编排器
     agent_router = AgentRouter(
         api_key="" if mock else gemini_api_key,
@@ -128,11 +144,14 @@ def run_pipeline(
         pass_threshold=pass_threshold,
         max_revision_rounds=max_rounds,
         deep_reader_enabled=deep_enabled,
-        max_deep_items=max_deep_items
+        max_deep_items=max_deep_items,
+        memory_enabled=memory_enabled,
+        user_profile=user_profile,
+        history_retention_days=retention_days
     )
 
-    print(f"\n🔀 启动多智能体动态路由 (DeepReader={'开启' if deep_enabled else '关闭'} -> Writer -> Critic)...")
-    summary_data = agent_router.route_and_process(cleaned_items)
+    print(f"\n🔀 启动多智能体动态路由 (Memory={'开启' if memory_enabled else '关闭'} -> DeepReader={'开启' if deep_enabled else '关闭'} -> Writer -> Critic)...")
+    summary_data = agent_router.route_and_process(cleaned_items, report_date=date_str)
 
     # 5. 排版并导出 Markdown
     output_cfg = config.get("output", {})
@@ -146,11 +165,14 @@ def run_pipeline(
     audit = summary_data.get("audit_report", {})
     score = audit.get("overall_score", "N/A")
     rounds = audit.get("rounds", 1)
+    suppressed = audit.get("suppressed_repeats", 0)
 
     print("\n" + "=" * 65)
     print("🎉 今日 AI 情报早报生成成功！")
     print(f"📁 报告文件已归档至: {file_path}")
     print(f"🛡️ 路由质检综合评分: 【{score} / 100 分】 (经历 {rounds} 轮审稿博弈)")
+    if suppressed > 0:
+        print(f"🧠 记忆中枢防炒冷饭: 识别并压制了 {suppressed} 条跨天重复线索")
     print("=" * 65)
     print(f"\n📌 今日核心大势：{summary_data.get('daily_focus', '')}\n")
 
@@ -161,11 +183,13 @@ def run_pipeline(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="AI Knowledge Agent - v1.2.0 Deep Reader 深度穿透版")
+    parser = argparse.ArgumentParser(description="AI Knowledge Agent - v1.3.0 个性化记忆版")
     parser.add_argument("--mock", action="store_true", help="强制使用本地 Mock 模式生成报告（不消耗 API）")
     parser.add_argument("--test-collect", action="store_true", help="仅测试数据采集，不调用多智能体")
     parser.add_argument("--git-push", action="store_true", help="生成报告后自动 commit 并 push 到 GitHub")
     parser.add_argument("--no-deep", action="store_true", help="关闭深度正文穿透（仅使用快讯模式，速度更快）")
+    parser.add_argument("--no-memory", action="store_true", help="关闭个性化记忆与去重（恢复无状态模式）")
+    parser.add_argument("--clear-memory", action="store_true", help="清空历史已读报道指纹缓存")
     parser.add_argument("--date", type=str, help="自定义报告日期 (格式: YYYY-MM-DD)")
     parser.add_argument("--config", type=str, default="config.json", help="配置文件路径")
 
@@ -175,6 +199,8 @@ def main():
         test_collect=args.test_collect,
         git_push=args.git_push,
         no_deep=args.no_deep,
+        no_memory=args.no_memory,
+        clear_memory=args.clear_memory,
         date_str=args.date,
         config_path=args.config
     )

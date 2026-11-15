@@ -1,0 +1,19 @@
+{
+  "role": "AI 架构师 / 全栈开发者",
+  "interests": [
+    "agent",
+    "mcp",
+    "local-models",
+    "rag",
+    "open-source",
+    "tool-use"
+  ],
+  "disliked_topics": [
+    "crypto",
+    "nft",
+    "funding-only",
+    "metaverse",
+    "web3"
+  ],
+  "tone_preference": "极客硬核、重实战、无公关套话"
+}
