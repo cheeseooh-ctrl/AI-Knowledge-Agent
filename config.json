@@ -1,6 +1,6 @@
 {
   "project_name": "AI Daily Knowledge Agent",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "sources": {
     "hackernews": {
       "enabled": true,
@@ -60,14 +60,24 @@
     "enabled": true,
     "history_retention_days": 14,
     "user_profile": {
-      "role": "AI 架构师 / 全栈开发者",
+      "role": "AI 架构师 / AI 产品经理 (FDE 交付专家)",
       "interests": [
         "agent",
         "mcp",
         "local-models",
         "rag",
         "open-source",
-        "tool-use"
+        "tool-use",
+        "harness",
+        "agent-loop",
+        "fde",
+        "deepseek-harness",
+        "vibe-coding",
+        "ontology",
+        "crawl4ai",
+        "spec-driven",
+        "observability",
+        "webmcp"
       ],
       "disliked_topics": [
         "crypto",
@@ -93,6 +103,13 @@
     "fallback_model": "gemini-2.0-flash",
     "temperature": 0.25,
     "max_output_tokens": 4096
+  },
+  "notification": {
+    "feishu": {
+      "enabled": false,
+      "webhook_url": "",
+      "card_theme": "blue"
+    }
   },
   "output": {
     "dir": "./reports",

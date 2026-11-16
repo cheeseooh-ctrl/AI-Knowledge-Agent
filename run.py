@@ -37,16 +37,17 @@ from src.collectors import (
 )
 from src.processor import clean_and_deduplicate, AgentRouter
 from src.exporters import MarkdownExporter
+from src.notification import FeishuPusher
 
 
 def auto_git_push(report_file: str, date_str: str):
     """
     【可选自动化功能】：将刚生成的日报自动 commit 并 push 到 GitHub。
     """
-    print("\n📦 正在将今日早报自动同步推送至 GitHub 远端知识库...")
+    print("\n📦 正在将今日早报与更新后的记忆库自动同步推送至 GitHub 远端知识库...")
     try:
-        subprocess.run(["git", "add", "reports/"], check=True, capture_output=True)
-        commit_msg = f"docs: 自动同步 {date_str} AI 每日情报早报 [v1.3.0 Memory Edition]"
+        subprocess.run(["git", "add", "reports/", "data/memory/"], check=True, capture_output=True)
+        commit_msg = f"docs: 自动同步 {date_str} AI 每日情报早报与记忆库 [v2.0.0 Cloud Edition] [skip ci]"
         subprocess.run(["git", "commit", "-m", commit_msg], check=True, capture_output=True)
         subprocess.run(["git", "push", "origin", "main"], check=True, capture_output=True, text=True)
         print("🚀 GitHub 云端知识库同步成功！可在网页端即时查看。")
@@ -61,6 +62,9 @@ def run_pipeline(
     no_deep: bool = False,
     no_memory: bool = False,
     clear_memory: bool = False,
+    feishu: bool = False,
+    dry_run_feishu: bool = False,
+    no_feishu: bool = False,
     date_str: str = None,
     config_path: str = "config.json"
 ):
@@ -82,7 +86,7 @@ def run_pipeline(
         date_str = datetime.now().strftime("%Y-%m-%d")
 
     print("\n" + "=" * 65)
-    print(f"🧠 AI Knowledge Agent [v1.3.0 个性化记忆版] 启动 | {date_str}")
+    print(f"🧠 AI Knowledge Agent [v2.0.0 云端全托管与推送版] 启动 | {date_str}")
     print("=" * 65 + "\n")
 
     # 1. 组建采集队伍
@@ -176,20 +180,37 @@ def run_pipeline(
     print("=" * 65)
     print(f"\n📌 今日核心大势：{summary_data.get('daily_focus', '')}\n")
 
-    # 6. 可选自动同步至 GitHub
+    # 6. 可选主动推送到飞书自定义机器人 (Interactive Card)
+    feishu_cfg = config.get("notification", {}).get("feishu", {})
+    env_webhook = os.environ.get("FEISHU_WEBHOOK_URL", "")
+    cfg_webhook = feishu_cfg.get("webhook_url", "")
+    has_webhook = bool(env_webhook or cfg_webhook)
+    should_push_feishu = (feishu or feishu_cfg.get("enabled", False) or has_webhook) and (not no_feishu)
+
+    if dry_run_feishu or should_push_feishu:
+        pusher = FeishuPusher(
+            webhook_url=cfg_webhook if not env_webhook else env_webhook,
+            card_theme=feishu_cfg.get("card_theme", "blue")
+        )
+        pusher.push(summary_data, date_str=date_str, dry_run=dry_run_feishu)
+
+    # 7. 可选自动同步至 GitHub
     should_push = git_push or output_cfg.get("git_auto_push", False)
     if should_push:
         auto_git_push(file_path, date_str)
 
 
 def main():
-    parser = argparse.ArgumentParser(description="AI Knowledge Agent - v1.3.0 个性化记忆版")
+    parser = argparse.ArgumentParser(description="AI Knowledge Agent - v2.0.0 云端全托管与推送版")
     parser.add_argument("--mock", action="store_true", help="强制使用本地 Mock 模式生成报告（不消耗 API）")
     parser.add_argument("--test-collect", action="store_true", help="仅测试数据采集，不调用多智能体")
     parser.add_argument("--git-push", action="store_true", help="生成报告后自动 commit 并 push 到 GitHub")
     parser.add_argument("--no-deep", action="store_true", help="关闭深度正文穿透（仅使用快讯模式，速度更快）")
     parser.add_argument("--no-memory", action="store_true", help="关闭个性化记忆与去重（恢复无状态模式）")
     parser.add_argument("--clear-memory", action="store_true", help="清空历史已读报道指纹缓存")
+    parser.add_argument("--feishu", action="store_true", help="强制触发飞书自定义机器人卡片推送")
+    parser.add_argument("--dry-run-feishu", action="store_true", help="仅预览飞书 Interactive Card 报文，不发起实际请求")
+    parser.add_argument("--no-feishu", action="store_true", help="明确关闭飞书推送")
     parser.add_argument("--date", type=str, help="自定义报告日期 (格式: YYYY-MM-DD)")
     parser.add_argument("--config", type=str, default="config.json", help="配置文件路径")
 
@@ -201,6 +222,9 @@ def main():
         no_deep=args.no_deep,
         no_memory=args.no_memory,
         clear_memory=args.clear_memory,
+        feishu=args.feishu,
+        dry_run_feishu=args.dry_run_feishu,
+        no_feishu=args.no_feishu,
         date_str=args.date,
         config_path=args.config
     )

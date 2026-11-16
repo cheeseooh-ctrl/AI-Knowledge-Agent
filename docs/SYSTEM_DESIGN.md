@@ -332,6 +332,9 @@ class NewsItem:
 | | `max_deep_items` | int | `3` | 单日最多穿透研读的重磅头条数 |
 | `router` | `pass_threshold` | int | `80` | 恶魔质检员放行合格分（加权满分 100） |
 | | `max_revision_rounds` | int | `2` | 质检打回重写的最大反思博弈轮数 |
+| `notification.feishu` | `enabled` | bool | `false` | 是否开启飞书多维交互卡片推送 |
+| | `webhook_url` | string | `""` | 飞书自定义机器人 Webhook (支持环境变量覆盖) |
+| | `card_theme` | string | `"blue"` | 飞书卡片 Header 主题色彩 |
 | `output` | `git_auto_push` | bool | `false` | 生成早报后是否默认自动同步推送至 GitHub |
 
 ---
@@ -344,6 +347,7 @@ class NewsItem:
 | **`v1.1.0`** | 多智能体动态路由 | `router.py`, `writer_agent.py`, `critic_agent.py` | 摆脱单一 Prompt，建立主笔与恶魔质检员的四维对抗审稿闭环与 GitHub 自动推送。 |
 | **`v1.2.0`** | 深度穿透认知体 | `web_reader.py`, `deep_reader_agent.py` | 摆脱 200 字摘要浅层阅读，自主抓取 5,000+ 字官方长文与 README 全文，挖掘具体跑分与已知局限。 |
 | **`v1.3.0`** | 个性化记忆智能体 | `memory_manager.py`, `data/memory/` | 摆脱跨天遗忘与千人一面，实现 14 天情景防炒冷饭与专属技术画像动态提权加成。 |
+| **`v2.0.0`** | 云端全托管与推送 | `.github/workflows/`, `feishu_pusher.py` | 摆脱电脑开机依赖与“人找信息”摩擦力，实现云端免开机自动运行与飞书多维交互卡片主动直达。 |
 
 ---
 *本文档为 AI Knowledge Agent 核心需求与架构基准，任何重大特性变更均需同步更新此说明书。*

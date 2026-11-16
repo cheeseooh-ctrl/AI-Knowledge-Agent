@@ -1,12 +1,22 @@
 {
-  "role": "AI 架构师 / 全栈开发者",
+  "role": "AI 架构师 / AI 产品经理 (FDE 交付专家)",
   "interests": [
     "agent",
     "mcp",
     "local-models",
     "rag",
     "open-source",
-    "tool-use"
+    "tool-use",
+    "harness",
+    "agent-loop",
+    "fde",
+    "deepseek-harness",
+    "vibe-coding",
+    "ontology",
+    "crawl4ai",
+    "spec-driven",
+    "observability",
+    "webmcp"
   ],
   "disliked_topics": [
     "crypto",
