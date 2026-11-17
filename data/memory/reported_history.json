@@ -1,1 +1,72 @@
-{}
+{
+  "225d4e6007035d74a6ee8266b1297db9": {
+    "title": "Quoting Go Proverbs",
+    "url": "https://simonwillison.net/2026/Nov/17/go-proverbs/",
+    "reported_date": "2026-11-17"
+  },
+  "209e3314fce728cc0c7c1f5927d32851": {
+    "title": "llm 0.37.3",
+    "url": "https://simonwillison.net/2026/Nov/16/llm/",
+    "reported_date": "2026-11-17"
+  },
+  "de958ef5defda8c7136547fb9cf4f4a3": {
+    "title": "datasette-maplibre 0.1a0",
+    "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
+    "reported_date": "2026-11-17"
+  },
+  "f18ec2e7b3ea695adffb4b580e00edad": {
+    "title": "Strengthening NATO and allied cyber defenses with AI",
+    "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+    "reported_date": "2026-11-17"
+  },
+  "42f4d7d36d04f3cc293b5be62a2492ee": {
+    "title": "langgenius/dify (⭐️ 161,329)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-17"
+  },
+  "e0f75366a9a4efe12d29b8805eb89c1e": {
+    "title": "bytedance/deer-flow (⭐️ 85,426)",
+    "url": "https://github.com/bytedance/deer-flow",
+    "reported_date": "2026-11-17"
+  },
+  "d2cfb143d7592a803e47428a236e8fbf": {
+    "title": "headroomlabs-ai/headroom (⭐️ 79,868)",
+    "url": "https://github.com/headroomlabs-ai/headroom",
+    "reported_date": "2026-11-17"
+  },
+  "4c1edba4e450ed9ba54498ed06490844": {
+    "title": "unslothai/unsloth (⭐️ 79,650)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-17"
+  },
+  "cccc26c3816a815a83ab4ecd5296dcff": {
+    "title": "CopilotKit/CopilotKit (⭐️ 38,758)",
+    "url": "https://github.com/CopilotKit/CopilotKit",
+    "reported_date": "2026-11-17"
+  },
+  "688c3113063926927c0c558391d5cdab": {
+    "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+    "url": "https://huggingface.co/papers/2611.18397",
+    "reported_date": "2026-11-17"
+  },
+  "f1e0219a60e9cc25a9ee18b7dffb6867": {
+    "title": "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+    "url": "https://huggingface.co/papers/2611.15789",
+    "reported_date": "2026-11-17"
+  },
+  "104bf9882bc960ad30e519809214da9d": {
+    "title": "MIRIX-2.0: Multi-Agent Memory System",
+    "url": "https://huggingface.co/papers/2611.12068",
+    "reported_date": "2026-11-17"
+  },
+  "9d7d817cc00058ca5843c579e4b652b4": {
+    "title": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+    "url": "https://huggingface.co/papers/2611.21003",
+    "reported_date": "2026-11-17"
+  },
+  "2d4ef5a932a17b06cfc81e7029357c59": {
+    "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+    "url": "https://github.com/juggler-ai/juggler",
+    "reported_date": "2026-11-17"
+  }
+}

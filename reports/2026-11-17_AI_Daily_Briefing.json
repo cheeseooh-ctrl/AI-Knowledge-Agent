@@ -1,0 +1,128 @@
+{
+  "daily_focus": "【预览演示模式】今日 AI 领域涵盖了学术前沿突破、热门开源智能体项目以及开发者社区深度实测。",
+  "breakthroughs": [
+    {
+      "title": "Quoting Go Proverbs",
+      "original_title": "Quoting Go Proverbs",
+      "url": "https://simonwillison.net/2026/Nov/17/go-proverbs/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "llm 0.37.3",
+      "original_title": "llm 0.37.3",
+      "url": "https://simonwillison.net/2026/Nov/16/llm/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "datasette-maplibre 0.1a0",
+      "original_title": "datasette-maplibre 0.1a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "original_title": "Strengthening NATO and allied cyber defenses with AI",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "source": "OpenAI News",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabili",
+        "来自权威发布渠道：OpenAI News"
+      ]
+    }
+  ],
+  "open_source_tools": [
+    {
+      "name": "langgenius/dify (⭐️ 161,329)",
+      "url": "https://github.com/langgenius/dify",
+      "stars_or_tag": "⭐️ 241993",
+      "description": "[Python] ⭐️ 161,329 stars - Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack."
+    },
+    {
+      "name": "bytedance/deer-flow (⭐️ 85,426)",
+      "url": "https://github.com/bytedance/deer-flow",
+      "stars_or_tag": "⭐️ 170852",
+      "description": "[Python] ⭐️ 85,426 stars - An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
+    },
+    {
+      "name": "headroomlabs-ai/headroom (⭐️ 79,868)",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "stars_or_tag": "⭐️ 139769",
+      "description": "[Python] ⭐️ 79,868 stars - Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server."
+    },
+    {
+      "name": "unslothai/unsloth (⭐️ 79,650)",
+      "url": "https://github.com/unslothai/unsloth",
+      "stars_or_tag": "⭐️ 79650",
+      "description": "[Python] ⭐️ 79,650 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
+    },
+    {
+      "name": "CopilotKit/CopilotKit (⭐️ 38,758)",
+      "url": "https://github.com/CopilotKit/CopilotKit",
+      "stars_or_tag": "⭐️ 48447",
+      "description": "[TypeScript] ⭐️ 38,758 stars - The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol"
+    }
+  ],
+  "trending_papers": [
+    {
+      "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+      "original_title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+      "url": "https://huggingface.co/papers/2611.18397",
+      "takeaway": "论文摘要: We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipel... (HF Upvotes: 101)"
+    },
+    {
+      "title": "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+      "original_title": "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+      "url": "https://huggingface.co/papers/2611.15789",
+      "takeaway": "论文摘要: Controllable real-world video generation models can condition on a rendered graybox proxy video, which fixes layout, motion and camera. Coding agents can build such videos by reconstructing a 4D scene in Blender, yet no benchmark checks both these... (HF Upvotes: 87)"
+    },
+    {
+      "title": "MIRIX-2.0: Multi-Agent Memory System",
+      "original_title": "MIRIX-2.0: Multi-Agent Memory System",
+      "url": "https://huggingface.co/papers/2611.12068",
+      "takeaway": "论文摘要: Long-term memory lets LLM agents personalize, stay consistent, and reuse what worked before. Parametric memories need training, consolidation can lose details for good, and keeping every record leaves a growing store to search. We present MIRIX-2.... (HF Upvotes: 49)"
+    },
+    {
+      "title": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+      "original_title": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+      "url": "https://huggingface.co/papers/2611.21003",
+      "takeaway": "论文摘要: We present K2-Horizon, a fleet of six fully open language models, from a 0.9B dense model to a 375B-A23B MoE, built for general-purpose reasoning and agentic work across math and science, software engineering, deep research, office automation, and... (HF Upvotes: 31)"
+    }
+  ],
+  "hot_discussions": [
+    {
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "summary": "HN 讨论热度: 280 点赞 / 118 条评论。讨论链接: https://news.ycombinator.com/item?id=48883305"
+    }
+  ],
+  "audit_report": {
+    "overall_score": 88,
+    "rounds": 1,
+    "dimension_scores": {
+      "anti_pr": 90,
+      "evidence_density": 88,
+      "actionability": 88,
+      "critical_balance": 86
+    },
+    "critique_summary": "【单机模拟模式】通过离线路由校验，符合用户画像偏好。",
+    "general_advice": "保持客观严谨。",
+    "user_role": "AI 架构师 / AI 产品经理 (FDE 交付专家)",
+    "suppressed_repeats": 0
+  }
+}
