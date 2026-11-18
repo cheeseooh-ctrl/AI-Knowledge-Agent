@@ -40,9 +40,9 @@
     "reported_date": "2026-11-17"
   },
   "cccc26c3816a815a83ab4ecd5296dcff": {
-    "title": "CopilotKit/CopilotKit (⭐️ 38,758)",
+    "title": "CopilotKit/CopilotKit (⭐️ 38,782)",
     "url": "https://github.com/CopilotKit/CopilotKit",
-    "reported_date": "2026-11-17"
+    "reported_date": "2026-11-18"
   },
   "688c3113063926927c0c558391d5cdab": {
     "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
@@ -67,6 +67,66 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-17"
+    "reported_date": "2026-11-18"
+  },
+  "f57697e2b3d226f565953eb5f22ca7a2": {
+    "title": "External sandboxes for coding agents",
+    "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+    "reported_date": "2026-11-18"
+  },
+  "f3fd7c7dbea4182c5d878d500b654f14": {
+    "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+    "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+    "reported_date": "2026-11-18"
+  },
+  "dc5d8c4522cbfeafb7cb5accc41029fe": {
+    "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+    "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+    "reported_date": "2026-11-18"
+  },
+  "cb8bddaee72a7e856f6c6c3d0e12c409": {
+    "title": "Introducing GPT-6.2 Astra and Sol",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "reported_date": "2026-11-18"
+  },
+  "c01000d72bc3b001c2caed518febdccc": {
+    "title": "langgenius/dify (⭐️ 161,396)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-18"
+  },
+  "4eed6681054b9ed326d3037a578fba43": {
+    "title": "unslothai/unsloth (⭐️ 79,718)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-18"
+  },
+  "49ddd2a03b6a91d190a0454af3e9f6a3": {
+    "title": "dataelement/bisheng (⭐️ 12,357)",
+    "url": "https://github.com/dataelement/bisheng",
+    "reported_date": "2026-11-18"
+  },
+  "b8df0403ae46447ca30ee1becac56514": {
+    "title": "ModelEngine-Group/nexent (⭐️ 6,218)",
+    "url": "https://github.com/ModelEngine-Group/nexent",
+    "reported_date": "2026-11-18"
+  },
+  "3675292c9c3a28b6184e85c810102af2": {
+    "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
+    "url": "https://huggingface.co/papers/2611.22115",
+    "reported_date": "2026-11-18"
+  },
+  "c0e89c898ff3cdef065b24cd6680f96c": {
+    "title": "AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs",
+    "url": "https://huggingface.co/papers/2611.17621",
+    "reported_date": "2026-11-18"
+  },
+  "878b1ffd45738da4d4565a083b5dc7f0": {
+    "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
+    "url": "https://huggingface.co/papers/2611.21218",
+    "reported_date": "2026-11-18"
+  },
+  "cc071b27b18eba4d36d817698a352600": {
+    "title": "Sage S2.1 Flash Technical Report",
+    "url": "https://huggingface.co/papers/2611.21072",
+    "reported_date": "2026-11-18"
   }
 }
