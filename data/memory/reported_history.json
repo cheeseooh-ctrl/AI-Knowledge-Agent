@@ -67,7 +67,7 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-18"
+    "reported_date": "2026-11-19"
   },
   "f57697e2b3d226f565953eb5f22ca7a2": {
     "title": "External sandboxes for coding agents",
@@ -128,5 +128,70 @@
     "title": "Sage S2.1 Flash Technical Report",
     "url": "https://huggingface.co/papers/2611.21072",
     "reported_date": "2026-11-18"
+  },
+  "702bd32cce74998ebfeca6dffe0495bc": {
+    "title": "llm-gemini 0.38",
+    "url": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
+    "reported_date": "2026-11-19"
+  },
+  "5603b5802e7c8e5d28725ad95c602c16": {
+    "title": "datasette-arrows 0.1a0",
+    "url": "https://simonwillison.net/2026/Nov/18/datasette-arrows/",
+    "reported_date": "2026-11-19"
+  },
+  "e46d1c65c550515269a357d302097a45": {
+    "title": "Quoting Daniel Stenberg",
+    "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
+    "reported_date": "2026-11-19"
+  },
+  "191d1dd216913aa0f9157c32821dc9ff": {
+    "title": "Research acceleration: The jagged frontier",
+    "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+    "reported_date": "2026-11-19"
+  },
+  "d800313161c12f6006565036f7ea7ac7": {
+    "title": "langgenius/dify (⭐️ 161,472)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-19"
+  },
+  "a45f4005162e17dc8e3b761f2dbcfeb9": {
+    "title": "headroomlabs-ai/headroom (⭐️ 80,126)",
+    "url": "https://github.com/headroomlabs-ai/headroom",
+    "reported_date": "2026-11-19"
+  },
+  "19be893cf13e135e9fe14d0ad35c88f4": {
+    "title": "unslothai/unsloth (⭐️ 79,762)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-19"
+  },
+  "6633ae6a43881b89c24795446b14ff4e": {
+    "title": "Tencent/WeKnora (⭐️ 37,778)",
+    "url": "https://github.com/Tencent/WeKnora",
+    "reported_date": "2026-11-19"
+  },
+  "ebc1607cb5ab8606c824500a6b30e3ab": {
+    "title": "AstrBotDevs/AstrBot (⭐️ 47,178)",
+    "url": "https://github.com/AstrBotDevs/AstrBot",
+    "reported_date": "2026-11-19"
+  },
+  "713baa1974ae5e8bda12c872f9e1565c": {
+    "title": "Beyond Answering: Learning to Speak First and Act in Streaming Video",
+    "url": "https://huggingface.co/papers/2611.17048",
+    "reported_date": "2026-11-19"
+  },
+  "8da315518e3c70e411b04645c20b30ac": {
+    "title": "Jeveration: System One Models Now Generate",
+    "url": "https://huggingface.co/papers/2611.24738",
+    "reported_date": "2026-11-19"
+  },
+  "bf3429e5019099a29e1c2cc9c33bbade": {
+    "title": "PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling",
+    "url": "https://huggingface.co/papers/2611.11318",
+    "reported_date": "2026-11-19"
+  },
+  "e70c9e4bc3a94d588fd01165c8d2fe50": {
+    "title": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
+    "url": "https://huggingface.co/papers/2611.24154",
+    "reported_date": "2026-11-19"
   }
 }
