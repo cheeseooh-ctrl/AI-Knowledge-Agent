@@ -1,0 +1,128 @@
+{
+  "daily_focus": "【预览演示模式】今日 AI 领域涵盖了学术前沿突破、热门开源智能体项目以及开发者社区深度实测。",
+  "breakthroughs": [
+    {
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "original_title": "Token fraud is here and it’s BAD (YouTube)",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "PostgreSQL 19 Released",
+      "original_title": "PostgreSQL 19 Released",
+      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "original_title": "Introducing Tool Retrieval in the Gemini API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "source": "Google AI Blog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in pr",
+        "来自权威发布渠道：Google AI Blog"
+      ]
+    },
+    {
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "original_title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "source": "OpenAI News",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and f",
+        "来自权威发布渠道：OpenAI News"
+      ]
+    }
+  ],
+  "open_source_tools": [
+    {
+      "name": "langgenius/dify (⭐️ 161,548)",
+      "url": "https://github.com/langgenius/dify",
+      "stars_or_tag": "⭐️ 242322",
+      "description": "[Python] ⭐️ 161,548 stars - Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack."
+    },
+    {
+      "name": "unslothai/unsloth (⭐️ 79,814)",
+      "url": "https://github.com/unslothai/unsloth",
+      "stars_or_tag": "⭐️ 79814",
+      "description": "[Python] ⭐️ 79,814 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
+    },
+    {
+      "name": "Tencent/WeKnora (⭐️ 37,852)",
+      "url": "https://github.com/Tencent/WeKnora",
+      "stars_or_tag": "⭐️ 66241",
+      "description": "[Go] ⭐️ 37,852 stars - Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki."
+    },
+    {
+      "name": "dataelement/bisheng (⭐️ 12,382)",
+      "url": "https://github.com/dataelement/bisheng",
+      "stars_or_tag": "⭐️ 24764",
+      "description": "[Python] ⭐️ 12,382 stars - BISHENG is an open-source enterprise Agent platform for building, deploying, and managing AI applications. It combines AI agents, workflows, RAG and knowledge management, desktop agent integration, and vibecoding app hosting with unified model management, evaluation, observability, access control, and enterprise administration."
+    },
+    {
+      "name": "CurvineIO/curvine (⭐️ 1,086)",
+      "url": "https://github.com/CurvineIO/curvine",
+      "stars_or_tag": "⭐️ 1629",
+      "description": "[Rust] ⭐️ 1,086 stars - AI-native, cloud-native file system in Rust. Full POSIX on object storage with a multi-tier distributed cache, for AI training, inference, and agents. CNCF Sandbox project."
+    }
+  ],
+  "trending_papers": [
+    {
+      "title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+      "original_title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+      "url": "https://huggingface.co/papers/2611.21373",
+      "takeaway": "论文摘要: Recent advances in video generation call for reliable detection grounded in explicit forensic evidence. However, current methods primarily depend on single-pass chain-of-thought reasoning that overlooks brief or localized artifacts, or on predefin... (HF Upvotes: 20)"
+    },
+    {
+      "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+      "original_title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+      "url": "https://huggingface.co/papers/2611.26444",
+      "takeaway": "论文摘要: Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and th... (HF Upvotes: 23)"
+    },
+    {
+      "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
+      "original_title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
+      "url": "https://huggingface.co/papers/2611.24654",
+      "takeaway": "论文摘要: A central challenge in adapting large language models (LLMs) is capability preservation: an adaptation can achieve its target while degrading general capabilities. We introduce CurvDelta, a scalable framework that incorporates the preservation con... (HF Upvotes: 23)"
+    },
+    {
+      "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+      "original_title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+      "url": "https://huggingface.co/papers/2611.24789",
+      "takeaway": "论文摘要: World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however... (HF Upvotes: 22)"
+    }
+  ],
+  "hot_discussions": [
+    {
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "summary": "HN 讨论热度: 280 点赞 / 118 条评论。讨论链接: https://news.ycombinator.com/item?id=48883305"
+    }
+  ],
+  "audit_report": {
+    "overall_score": 88,
+    "rounds": 1,
+    "dimension_scores": {
+      "anti_pr": 90,
+      "evidence_density": 88,
+      "actionability": 88,
+      "critical_balance": 86
+    },
+    "critique_summary": "【单机模拟模式】通过离线路由校验，符合用户画像偏好。",
+    "general_advice": "保持客观严谨。",
+    "user_role": "AI 架构师 / AI 产品经理 (FDE 交付专家)",
+    "suppressed_repeats": 2
+  }
+}

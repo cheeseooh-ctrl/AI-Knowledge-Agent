@@ -67,7 +67,7 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-19"
+    "reported_date": "2026-11-20"
   },
   "f57697e2b3d226f565953eb5f22ca7a2": {
     "title": "External sandboxes for coding agents",
@@ -193,5 +193,70 @@
     "title": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
     "url": "https://huggingface.co/papers/2611.24154",
     "reported_date": "2026-11-19"
+  },
+  "4f4a443f15cfd752202761ee4de30c62": {
+    "title": "Token fraud is here and it’s BAD (YouTube)",
+    "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+    "reported_date": "2026-11-20"
+  },
+  "c58d8aa2ee6b3e04e1494ff3e5032c44": {
+    "title": "PostgreSQL 19 Released",
+    "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
+    "reported_date": "2026-11-20"
+  },
+  "8fbb8336c5e2a359a95a655fe19b50b4": {
+    "title": "Introducing Tool Retrieval in the Gemini API",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "reported_date": "2026-11-20"
+  },
+  "a766f19d7c9d50f861397f185f3a1f43": {
+    "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+    "reported_date": "2026-11-20"
+  },
+  "78e9c3ecc64d4b564b1431549182aa06": {
+    "title": "langgenius/dify (⭐️ 161,548)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-20"
+  },
+  "36b89014f197b2c36de2cc6a99b287b3": {
+    "title": "unslothai/unsloth (⭐️ 79,814)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-20"
+  },
+  "cd706fab73d808c00e5c036678028cba": {
+    "title": "Tencent/WeKnora (⭐️ 37,852)",
+    "url": "https://github.com/Tencent/WeKnora",
+    "reported_date": "2026-11-20"
+  },
+  "63bb31d9c3052425cd4eb9a31fea0262": {
+    "title": "dataelement/bisheng (⭐️ 12,382)",
+    "url": "https://github.com/dataelement/bisheng",
+    "reported_date": "2026-11-20"
+  },
+  "e8b384bd2941384bf832e35c2ca6180d": {
+    "title": "CurvineIO/curvine (⭐️ 1,086)",
+    "url": "https://github.com/CurvineIO/curvine",
+    "reported_date": "2026-11-20"
+  },
+  "be5c898e4acd980c2f8e3dc05604a937": {
+    "title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+    "url": "https://huggingface.co/papers/2611.21373",
+    "reported_date": "2026-11-20"
+  },
+  "08cf573eedfbbe0fa47efe05ab6d32b7": {
+    "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+    "url": "https://huggingface.co/papers/2611.26444",
+    "reported_date": "2026-11-20"
+  },
+  "e37d7432a2834416ef0a6917ed2b3340": {
+    "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
+    "url": "https://huggingface.co/papers/2611.24654",
+    "reported_date": "2026-11-20"
+  },
+  "1dbe00f6f997ddde6c672735c7163978": {
+    "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+    "url": "https://huggingface.co/papers/2611.24789",
+    "reported_date": "2026-11-20"
   }
 }
