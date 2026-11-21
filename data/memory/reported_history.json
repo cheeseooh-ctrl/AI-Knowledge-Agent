@@ -67,7 +67,7 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-20"
+    "reported_date": "2026-11-21"
   },
   "f57697e2b3d226f565953eb5f22ca7a2": {
     "title": "External sandboxes for coding agents",
@@ -258,5 +258,70 @@
     "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
     "url": "https://huggingface.co/papers/2611.24789",
     "reported_date": "2026-11-20"
+  },
+  "a54bac7b88c1e38f4591b4de1cbffac6": {
+    "title": "Quoting Ravi Vakil",
+    "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+    "reported_date": "2026-11-21"
+  },
+  "31789f50cd3c50afebc7af9e31b02e24": {
+    "title": "Quoting Levent Alpöge",
+    "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+    "reported_date": "2026-11-21"
+  },
+  "be192a5adb68742232156503b8b56655": {
+    "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+    "url": "https://openai.com/business/customer-stories/hebbia",
+    "reported_date": "2026-11-21"
+  },
+  "f8f3cd6662aa34726c3a24a0456bbe25": {
+    "title": "Combatting adversarial distillation",
+    "url": "https://openai.com/index/combatting-adversarial-distillation",
+    "reported_date": "2026-11-21"
+  },
+  "d086b0e4792b6af6b755b37a83ca2b7b": {
+    "title": "langgenius/dify (⭐️ 161,598)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-21"
+  },
+  "374988ceb3b015a366c3698a524129b8": {
+    "title": "bytedance/deer-flow (⭐️ 85,564)",
+    "url": "https://github.com/bytedance/deer-flow",
+    "reported_date": "2026-11-21"
+  },
+  "6f2e5ee3e2dd6ded75cabad69f0824f6": {
+    "title": "unslothai/unsloth (⭐️ 79,870)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-21"
+  },
+  "4ef64edcdacd48789ddba89223376479": {
+    "title": "agentscope-ai/agentscope-java (⭐️ 6,439)",
+    "url": "https://github.com/agentscope-ai/agentscope-java",
+    "reported_date": "2026-11-21"
+  },
+  "d77b4ea95c75204292c31ccbf0378005": {
+    "title": "UfoMiao/zcf (⭐️ 6,068)",
+    "url": "https://github.com/UfoMiao/zcf",
+    "reported_date": "2026-11-21"
+  },
+  "9b233cd27098be8f7a766319fe3f72ae": {
+    "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+    "url": "https://huggingface.co/papers/2611.26409",
+    "reported_date": "2026-11-21"
+  },
+  "6f167a06ead1a2199fbc57305c0f9925": {
+    "title": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+    "url": "https://huggingface.co/papers/2611.26590",
+    "reported_date": "2026-11-21"
+  },
+  "b42867f3bcb28f19621a3dcf7e1f57cb": {
+    "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+    "url": "https://huggingface.co/papers/2611.26595",
+    "reported_date": "2026-11-21"
+  },
+  "0cef0b7cb5f0f3f49c1a9c90836308f5": {
+    "title": "Posterior Matching Distillation",
+    "url": "https://huggingface.co/papers/2611.26629",
+    "reported_date": "2026-11-21"
   }
 }
