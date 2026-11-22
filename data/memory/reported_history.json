@@ -67,7 +67,7 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-21"
+    "reported_date": "2026-11-22"
   },
   "f57697e2b3d226f565953eb5f22ca7a2": {
     "title": "External sandboxes for coding agents",
@@ -242,7 +242,7 @@
   "be5c898e4acd980c2f8e3dc05604a937": {
     "title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
     "url": "https://huggingface.co/papers/2611.21373",
-    "reported_date": "2026-11-20"
+    "reported_date": "2026-11-22"
   },
   "08cf573eedfbbe0fa47efe05ab6d32b7": {
     "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
@@ -323,5 +323,65 @@
     "title": "Posterior Matching Distillation",
     "url": "https://huggingface.co/papers/2611.26629",
     "reported_date": "2026-11-21"
+  },
+  "da7c0881a96915a685df4466ddfd1fc8": {
+    "title": "Muru",
+    "url": "https://simonwillison.net/2026/Nov/21/muru/",
+    "reported_date": "2026-11-22"
+  },
+  "a069a2bc10c08c2604d3ac136fc9aae6": {
+    "title": "Can AI help scientists identify promising drug candidates?",
+    "url": "https://openai.com/index/introducing-medchembench",
+    "reported_date": "2026-11-22"
+  },
+  "596000af5868424c2d756000c210fc4e": {
+    "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
+    "reported_date": "2026-11-22"
+  },
+  "951caf884eda684d8cfec4ac61cdf0c9": {
+    "title": "The Gemini app is now available on lower-memory Android devices.",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+    "reported_date": "2026-11-22"
+  },
+  "f3bc4eea824757973c6dac721807c6a9": {
+    "title": "langgenius/dify (⭐️ 161,644)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-22"
+  },
+  "20fcfee8f825e4f15b076bb9c5d8296d": {
+    "title": "unslothai/unsloth (⭐️ 79,934)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-22"
+  },
+  "40cb5d23bb4d97a401877306941a946d": {
+    "title": "thesysdev/openui (⭐️ 15,406)",
+    "url": "https://github.com/thesysdev/openui",
+    "reported_date": "2026-11-22"
+  },
+  "504821bf75f3db4e9680186a77f5ac4c": {
+    "title": "Prism-Shadow/penguin-harness (⭐️ 3,298)",
+    "url": "https://github.com/Prism-Shadow/penguin-harness",
+    "reported_date": "2026-11-22"
+  },
+  "fcca58c058ddc697a17c02cded613d14": {
+    "title": "bigfish1913/pi-rust (⭐️ 295)",
+    "url": "https://github.com/bigfish1913/pi-rust",
+    "reported_date": "2026-11-22"
+  },
+  "13d109e6da540b76ebbdfa0c5c320848": {
+    "title": "The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation",
+    "url": "https://huggingface.co/papers/2611.21383",
+    "reported_date": "2026-11-22"
+  },
+  "e273902122852cb7b7b8748059ad3b92": {
+    "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+    "url": "https://huggingface.co/papers/2611.26603",
+    "reported_date": "2026-11-22"
+  },
+  "038241e024832066cbd6671e3d86f0cd": {
+    "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+    "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+    "reported_date": "2026-11-22"
   }
 }

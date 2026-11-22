@@ -1,0 +1,128 @@
+{
+  "daily_focus": "【预览演示模式】今日 AI 领域涵盖了学术前沿突破、热门开源智能体项目以及开发者社区深度实测。",
+  "breakthroughs": [
+    {
+      "title": "Muru",
+      "original_title": "Muru",
+      "url": "https://simonwillison.net/2026/Nov/21/muru/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "original_title": "Can AI help scientists identify promising drug candidates?",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "source": "OpenAI News",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental e",
+        "来自权威发布渠道：OpenAI News"
+      ]
+    },
+    {
+      "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+      "original_title": "Walter Isaacson on curiosity and creativity in the AI age.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
+      "source": "Google AI Blog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and hum",
+        "来自权威发布渠道：Google AI Blog"
+      ]
+    },
+    {
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "original_title": "The Gemini app is now available on lower-memory Android devices.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+      "source": "Google AI Blog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image",
+        "来自权威发布渠道：Google AI Blog"
+      ]
+    }
+  ],
+  "open_source_tools": [
+    {
+      "name": "langgenius/dify (⭐️ 161,644)",
+      "url": "https://github.com/langgenius/dify",
+      "stars_or_tag": "⭐️ 242466",
+      "description": "[Python] ⭐️ 161,644 stars - Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack."
+    },
+    {
+      "name": "unslothai/unsloth (⭐️ 79,934)",
+      "url": "https://github.com/unslothai/unsloth",
+      "stars_or_tag": "⭐️ 79934",
+      "description": "[Python] ⭐️ 79,934 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
+    },
+    {
+      "name": "thesysdev/openui (⭐️ 15,406)",
+      "url": "https://github.com/thesysdev/openui",
+      "stars_or_tag": "⭐️ 15406",
+      "description": "[TypeScript] ⭐️ 15,406 stars - The Open Standard for Generative UI"
+    },
+    {
+      "name": "Prism-Shadow/penguin-harness (⭐️ 3,298)",
+      "url": "https://github.com/Prism-Shadow/penguin-harness",
+      "stars_or_tag": "⭐️ 4122",
+      "description": "[TypeScript] ⭐️ 3,298 stars - 🐧 Unified and Stable RSI Platform"
+    },
+    {
+      "name": "bigfish1913/pi-rust (⭐️ 295)",
+      "url": "https://github.com/bigfish1913/pi-rust",
+      "stars_or_tag": "⭐️ 368",
+      "description": "[Rust] ⭐️ 295 stars - Rust-native, library-first coding-agent runtime and terminal CLI inspired by Pi, with composable LLM providers, tools, sessions, and plugin ABI"
+    }
+  ],
+  "trending_papers": [
+    {
+      "title": "The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation",
+      "original_title": "The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation",
+      "url": "https://huggingface.co/papers/2611.21383",
+      "takeaway": "论文摘要: 3D Gaussian Splatting enables object-level operations on Gaussian primitives, yet existing segmentation methods are largely trained and evaluated through rendered views. This mismatch can produce accurate rendered masks from incomplete 3D selectio... (HF Upvotes: 32)"
+    },
+    {
+      "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+      "original_title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+      "url": "https://huggingface.co/papers/2611.26603",
+      "takeaway": "论文摘要: We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they commonly trade off temporal consistency and boundary sharpne... (HF Upvotes: 31)"
+    },
+    {
+      "title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+      "original_title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+      "url": "https://huggingface.co/papers/2611.21373",
+      "takeaway": "论文摘要: Recent advances in video generation call for reliable detection grounded in explicit forensic evidence. However, current methods primarily depend on single-pass chain-of-thought reasoning that overlooks brief or localized artifacts, or on predefin... (HF Upvotes: 54)"
+    },
+    {
+      "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+      "original_title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "takeaway": "聚焦最新架构或训练方法突破，社区热度较高。"
+    }
+  ],
+  "hot_discussions": [
+    {
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "summary": "HN 讨论热度: 280 点赞 / 118 条评论。讨论链接: https://news.ycombinator.com/item?id=48883305"
+    }
+  ],
+  "audit_report": {
+    "overall_score": 88,
+    "rounds": 1,
+    "dimension_scores": {
+      "anti_pr": 90,
+      "evidence_density": 88,
+      "actionability": 88,
+      "critical_balance": 86
+    },
+    "critique_summary": "【单机模拟模式】通过离线路由校验，符合用户画像偏好。",
+    "general_advice": "保持客观严谨。",
+    "user_role": "AI 架构师 / AI 产品经理 (FDE 交付专家)",
+    "suppressed_repeats": 12
+  }
+}
