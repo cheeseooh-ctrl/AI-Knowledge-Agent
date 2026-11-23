@@ -67,7 +67,7 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-22"
+    "reported_date": "2026-11-23"
   },
   "f57697e2b3d226f565953eb5f22ca7a2": {
     "title": "External sandboxes for coding agents",
@@ -105,9 +105,9 @@
     "reported_date": "2026-11-18"
   },
   "b8df0403ae46447ca30ee1becac56514": {
-    "title": "ModelEngine-Group/nexent (⭐️ 6,218)",
+    "title": "ModelEngine-Group/nexent (⭐️ 6,246)",
     "url": "https://github.com/ModelEngine-Group/nexent",
-    "reported_date": "2026-11-18"
+    "reported_date": "2026-11-23"
   },
   "3675292c9c3a28b6184e85c810102af2": {
     "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
@@ -262,7 +262,7 @@
   "a54bac7b88c1e38f4591b4de1cbffac6": {
     "title": "Quoting Ravi Vakil",
     "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
-    "reported_date": "2026-11-21"
+    "reported_date": "2026-11-23"
   },
   "31789f50cd3c50afebc7af9e31b02e24": {
     "title": "Quoting Levent Alpöge",
@@ -327,7 +327,7 @@
   "da7c0881a96915a685df4466ddfd1fc8": {
     "title": "Muru",
     "url": "https://simonwillison.net/2026/Nov/21/muru/",
-    "reported_date": "2026-11-22"
+    "reported_date": "2026-11-23"
   },
   "a069a2bc10c08c2604d3ac136fc9aae6": {
     "title": "Can AI help scientists identify promising drug candidates?",
@@ -383,5 +383,55 @@
     "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
     "url": "https://huggingface.co/blog/harness-adapters-at-scale",
     "reported_date": "2026-11-22"
+  },
+  "f284fb72a4132e13d2a43ae89f28f90c": {
+    "title": "Select Styling Specimens",
+    "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+    "reported_date": "2026-11-23"
+  },
+  "0d6069d0912130a905270f3215b0bfaf": {
+    "title": "Perplexity and Intelligence",
+    "url": "https://openai.com/index/perplexity-and-intelligence",
+    "reported_date": "2026-11-23"
+  },
+  "6fcc2ec92ddc73eb1572126d4fe11bfe": {
+    "title": "langgenius/dify (⭐️ 161,714)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-23"
+  },
+  "9af24870d4e6a8fb1a85bd2032082f91": {
+    "title": "unslothai/unsloth (⭐️ 80,014)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-23"
+  },
+  "bd9fece0991c6a47f67174151381ffa0": {
+    "title": "thesysdev/openui (⭐️ 15,446)",
+    "url": "https://github.com/thesysdev/openui",
+    "reported_date": "2026-11-23"
+  },
+  "a56c1406e30aae052611fe6917e2076f": {
+    "title": "abacusai/abacusai-bot (⭐️ 614)",
+    "url": "https://github.com/abacusai/abacusai-bot",
+    "reported_date": "2026-11-23"
+  },
+  "8467041c532739d2ac4ee03ad1dca416": {
+    "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+    "url": "https://huggingface.co/papers/2611.27193",
+    "reported_date": "2026-11-23"
+  },
+  "7642d0825cb7bcf9803693b05724d992": {
+    "title": "Non-penetrating World Models",
+    "url": "https://huggingface.co/papers/2611.27963",
+    "reported_date": "2026-11-23"
+  },
+  "62aa5642cf60ab2b23a87741f22e2346": {
+    "title": "Clover-35B-A3B-Preview Technical Report",
+    "url": "https://huggingface.co/papers/2611.24636",
+    "reported_date": "2026-11-23"
+  },
+  "6fe0708aea0b3e0a100a9e8d31c157a7": {
+    "title": "HiUni: Harmonizing Understanding and Generation in Shared Visual Space",
+    "url": "https://huggingface.co/papers/2611.26107",
+    "reported_date": "2026-11-23"
   }
 }

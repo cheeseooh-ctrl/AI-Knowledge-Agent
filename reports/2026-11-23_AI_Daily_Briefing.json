@@ -1,0 +1,128 @@
+{
+  "daily_focus": "【预览演示模式】今日 AI 领域涵盖了学术前沿突破、热门开源智能体项目以及开发者社区深度实测。",
+  "breakthroughs": [
+    {
+      "title": "Select Styling Specimens",
+      "original_title": "Select Styling Specimens",
+      "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "Perplexity and Intelligence",
+      "original_title": "Perplexity and Intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "source": "OpenAI News",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "How perplexity measures progress in AI models, and why it could help developers establish a shared a",
+        "来自权威发布渠道：OpenAI News"
+      ]
+    },
+    {
+      "title": "Muru",
+      "original_title": "Muru",
+      "url": "https://simonwillison.net/2026/Nov/21/muru/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "Quoting Ravi Vakil",
+      "original_title": "Quoting Ravi Vakil",
+      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    }
+  ],
+  "open_source_tools": [
+    {
+      "name": "langgenius/dify (⭐️ 161,714)",
+      "url": "https://github.com/langgenius/dify",
+      "stars_or_tag": "⭐️ 242571",
+      "description": "[Python] ⭐️ 161,714 stars - Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack."
+    },
+    {
+      "name": "unslothai/unsloth (⭐️ 80,014)",
+      "url": "https://github.com/unslothai/unsloth",
+      "stars_or_tag": "⭐️ 80014",
+      "description": "[Python] ⭐️ 80,014 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
+    },
+    {
+      "name": "thesysdev/openui (⭐️ 15,446)",
+      "url": "https://github.com/thesysdev/openui",
+      "stars_or_tag": "⭐️ 15446",
+      "description": "[TypeScript] ⭐️ 15,446 stars - The Open Standard for Generative UI"
+    },
+    {
+      "name": "ModelEngine-Group/nexent (⭐️ 6,246)",
+      "url": "https://github.com/ModelEngine-Group/nexent",
+      "stars_or_tag": "⭐️ 1873",
+      "description": "[Python] ⭐️ 6,246 stars - Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes."
+    },
+    {
+      "name": "abacusai/abacusai-bot (⭐️ 614)",
+      "url": "https://github.com/abacusai/abacusai-bot",
+      "stars_or_tag": "⭐️ 921",
+      "description": "[TypeScript] ⭐️ 614 stars - 100% free, open-source personal agents for your messaging apps, tools, and services"
+    }
+  ],
+  "trending_papers": [
+    {
+      "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+      "original_title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+      "url": "https://huggingface.co/papers/2611.27193",
+      "takeaway": "论文摘要: Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In t... (HF Upvotes: 49)"
+    },
+    {
+      "title": "Non-penetrating World Models",
+      "original_title": "Non-penetrating World Models",
+      "url": "https://huggingface.co/papers/2611.27963",
+      "takeaway": "论文摘要: We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world models respond to physical obstacles. Our evalua... (HF Upvotes: 38)"
+    },
+    {
+      "title": "Clover-35B-A3B-Preview Technical Report",
+      "original_title": "Clover-35B-A3B-Preview Technical Report",
+      "url": "https://huggingface.co/papers/2611.24636",
+      "takeaway": "论文摘要: We introduce Clover-35B-A3B-Preview (Clover), a mixture-of-experts diffusion language model with 35 billion total parameters and 3 billion activated parameters, supporting thinking-mode generation. Clover adapts Gated Delta Networks to block diffu... (HF Upvotes: 29)"
+    },
+    {
+      "title": "HiUni: Harmonizing Understanding and Generation in Shared Visual Space",
+      "original_title": "HiUni: Harmonizing Understanding and Generation in Shared Visual Space",
+      "url": "https://huggingface.co/papers/2611.26107",
+      "takeaway": "论文摘要: Unified multimodal models aim to support visual understanding and generation within a single framework. However, prevailing approaches often separate their visual representations or backbone computation to accommodate the different requirements of... (HF Upvotes: 25)"
+    }
+  ],
+  "hot_discussions": [
+    {
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "summary": "HN 讨论热度: 280 点赞 / 118 条评论。讨论链接: https://news.ycombinator.com/item?id=48883305"
+    }
+  ],
+  "audit_report": {
+    "overall_score": 88,
+    "rounds": 1,
+    "dimension_scores": {
+      "anti_pr": 90,
+      "evidence_density": 88,
+      "actionability": 88,
+      "critical_balance": 86
+    },
+    "critique_summary": "【单机模拟模式】通过离线路由校验，符合用户画像偏好。",
+    "general_advice": "保持客观严谨。",
+    "user_role": "AI 架构师 / AI 产品经理 (FDE 交付专家)",
+    "suppressed_repeats": 13
+  }
+}
