@@ -1,0 +1,128 @@
+{
+  "daily_focus": "【预览演示模式】今日 AI 领域涵盖了学术前沿突破、热门开源智能体项目以及开发者社区深度实测。",
+  "breakthroughs": [
+    {
+      "title": "datasette-agent 0.7a1",
+      "original_title": "datasette-agent 0.7a1",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "datasette-charts 0.2a0",
+      "original_title": "datasette-charts 0.2a0",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "original_title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "original_title": "OpenAI and Cisco introduce Shirudo",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "source": "OpenAI News",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running",
+        "来自权威发布渠道：OpenAI News"
+      ]
+    }
+  ],
+  "open_source_tools": [
+    {
+      "name": "langgenius/dify (⭐️ 161,815)",
+      "url": "https://github.com/langgenius/dify",
+      "stars_or_tag": "⭐️ 242722",
+      "description": "[Python] ⭐️ 161,815 stars - Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack."
+    },
+    {
+      "name": "unslothai/unsloth (⭐️ 80,126)",
+      "url": "https://github.com/unslothai/unsloth",
+      "stars_or_tag": "⭐️ 80126",
+      "description": "[Python] ⭐️ 80,126 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
+    },
+    {
+      "name": "thesysdev/openui (⭐️ 15,472)",
+      "url": "https://github.com/thesysdev/openui",
+      "stars_or_tag": "⭐️ 15472",
+      "description": "[TypeScript] ⭐️ 15,472 stars - The Open Standard for Generative UI"
+    },
+    {
+      "name": "iflytek/astron-agent (⭐️ 8,923)",
+      "url": "https://github.com/iflytek/astron-agent",
+      "stars_or_tag": "⭐️ 13384",
+      "description": "[Java] ⭐️ 8,923 stars - Enterprise-grade, commercial-friendly agentic workflow platform for building next-generation SuperAgents."
+    },
+    {
+      "name": "google/adk-java (⭐️ 1,779)",
+      "url": "https://github.com/google/adk-java",
+      "stars_or_tag": "⭐️ 2668",
+      "description": "[Java] ⭐️ 1,779 stars - An open-source, code-first Java toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control."
+    }
+  ],
+  "trending_papers": [
+    {
+      "title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
+      "original_title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
+      "url": "https://huggingface.co/papers/2611.29897",
+      "takeaway": "论文摘要: Long-horizon, real-time controllable motion generation is essential for interactive animation and humanoid robotics, where an agent must respond to changing instructions and spatial goals while moving. Existing autoregressive diffusion methods gen... (HF Upvotes: 107)"
+    },
+    {
+      "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+      "original_title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+      "url": "https://huggingface.co/papers/2611.31201",
+      "takeaway": "论文摘要: Frontier multimodal models exhibit extraordinary generalization in generating robot actions from observations and instructions, enabling a new paradigm in which they serve directly as policies within closed-loop robotic harnesses. However, the des... (HF Upvotes: 75)"
+    },
+    {
+      "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+      "original_title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+      "url": "https://huggingface.co/papers/2611.30013",
+      "takeaway": "论文摘要: Animating arbitrary 3D assets from instructions requires both structural inference and motion control, yet existing motion benchmarks mostly cover conventional human or animal skeletons with simple instructions. We introduce DivDynBench, which eva... (HF Upvotes: 44)"
+    },
+    {
+      "title": "WeMM-Ecom: Advancing Multimodal Content Understanding for WeChat E-Commerce",
+      "original_title": "WeMM-Ecom: Advancing Multimodal Content Understanding for WeChat E-Commerce",
+      "url": "https://huggingface.co/papers/2611.30662",
+      "takeaway": "论文摘要: We present WeMM-Ecom, a family of multimodal large language models that deliver frontier e-commerce capabilities while achieving state-of-the-art general-purpose performance at their respective scales. The family spans five sizes, from a 0.8B dens... (HF Upvotes: 48)"
+    }
+  ],
+  "hot_discussions": [
+    {
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "summary": "HN 讨论热度: 280 点赞 / 118 条评论。讨论链接: https://news.ycombinator.com/item?id=48883305"
+    }
+  ],
+  "audit_report": {
+    "overall_score": 88,
+    "rounds": 1,
+    "dimension_scores": {
+      "anti_pr": 90,
+      "evidence_density": 88,
+      "actionability": 88,
+      "critical_balance": 86
+    },
+    "critique_summary": "【单机模拟模式】通过离线路由校验，符合用户画像偏好。",
+    "general_advice": "保持客观严谨。",
+    "user_role": "AI 架构师 / AI 产品经理 (FDE 交付专家)",
+    "suppressed_repeats": 3
+  }
+}

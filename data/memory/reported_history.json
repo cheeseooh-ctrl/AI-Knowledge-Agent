@@ -67,7 +67,7 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-23"
+    "reported_date": "2026-11-24"
   },
   "f57697e2b3d226f565953eb5f22ca7a2": {
     "title": "External sandboxes for coding agents",
@@ -433,5 +433,70 @@
     "title": "HiUni: Harmonizing Understanding and Generation in Shared Visual Space",
     "url": "https://huggingface.co/papers/2611.26107",
     "reported_date": "2026-11-23"
+  },
+  "89a6810517d9801524699f2fa5928534": {
+    "title": "datasette-agent 0.7a1",
+    "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
+    "reported_date": "2026-11-24"
+  },
+  "5b234340d0a1c6d92eab0a741afeef49": {
+    "title": "datasette-charts 0.2a0",
+    "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+    "reported_date": "2026-11-24"
+  },
+  "e37b4cc017508a53637ba7cc9cb8b5a4": {
+    "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+    "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
+    "reported_date": "2026-11-24"
+  },
+  "3bcfa1fc446bd46b7eb33e06f69685aa": {
+    "title": "OpenAI and Cisco introduce Shirudo",
+    "url": "https://openai.com/index/introducing-shirudo",
+    "reported_date": "2026-11-24"
+  },
+  "6ce23a4743d79ca383573de8b28d306b": {
+    "title": "langgenius/dify (⭐️ 161,815)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-24"
+  },
+  "a76a1211d8e6a95ec6fe303627cf542e": {
+    "title": "unslothai/unsloth (⭐️ 80,126)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-24"
+  },
+  "75abb19939095377f1533524543bdefc": {
+    "title": "thesysdev/openui (⭐️ 15,472)",
+    "url": "https://github.com/thesysdev/openui",
+    "reported_date": "2026-11-24"
+  },
+  "51143079e8d3a01aa645d7b0efd75558": {
+    "title": "iflytek/astron-agent (⭐️ 8,923)",
+    "url": "https://github.com/iflytek/astron-agent",
+    "reported_date": "2026-11-24"
+  },
+  "14f79c387c78fb51f4a7e023f17fd736": {
+    "title": "google/adk-java (⭐️ 1,779)",
+    "url": "https://github.com/google/adk-java",
+    "reported_date": "2026-11-24"
+  },
+  "ca7819bcf3eb9f5f0e466e22e9330249": {
+    "title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
+    "url": "https://huggingface.co/papers/2611.29897",
+    "reported_date": "2026-11-24"
+  },
+  "09f5d5cb3c5422881a718b66b217139a": {
+    "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+    "url": "https://huggingface.co/papers/2611.31201",
+    "reported_date": "2026-11-24"
+  },
+  "9042ffb0ab16ed900af58b965859bfa2": {
+    "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+    "url": "https://huggingface.co/papers/2611.30013",
+    "reported_date": "2026-11-24"
+  },
+  "f31e1db52d14fd44511608f8ba59dc2c": {
+    "title": "WeMM-Ecom: Advancing Multimodal Content Understanding for WeChat E-Commerce",
+    "url": "https://huggingface.co/papers/2611.30662",
+    "reported_date": "2026-11-24"
   }
 }
