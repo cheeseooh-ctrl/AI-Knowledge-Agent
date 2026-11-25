@@ -67,7 +67,7 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-24"
+    "reported_date": "2026-11-25"
   },
   "f57697e2b3d226f565953eb5f22ca7a2": {
     "title": "External sandboxes for coding agents",
@@ -105,9 +105,9 @@
     "reported_date": "2026-11-18"
   },
   "b8df0403ae46447ca30ee1becac56514": {
-    "title": "ModelEngine-Group/nexent (⭐️ 6,246)",
+    "title": "ModelEngine-Group/nexent (⭐️ 6,258)",
     "url": "https://github.com/ModelEngine-Group/nexent",
-    "reported_date": "2026-11-23"
+    "reported_date": "2026-11-25"
   },
   "3675292c9c3a28b6184e85c810102af2": {
     "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
@@ -498,5 +498,65 @@
     "title": "WeMM-Ecom: Advancing Multimodal Content Understanding for WeChat E-Commerce",
     "url": "https://huggingface.co/papers/2611.30662",
     "reported_date": "2026-11-24"
+  },
+  "6263d615bf1f2c87739e4e532ee5b0ab": {
+    "title": "Three LLM inflection points in twelve months",
+    "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+    "reported_date": "2026-11-25"
+  },
+  "ed5c576f149a15541c86612cac807549": {
+    "title": "GPT 6.2 Astra Solves a Historical Mystery",
+    "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+    "reported_date": "2026-11-25"
+  },
+  "aa9fa9a5c01cd69be9c68f952cafccd8": {
+    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "reported_date": "2026-11-25"
+  },
+  "0851e2f8574a675d1ae4832de7967691": {
+    "title": "Searching for distant planets with Astra",
+    "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+    "reported_date": "2026-11-25"
+  },
+  "37d4be8cd4ae6ecc4a152c6caa1e86c7": {
+    "title": "langgenius/dify (⭐️ 161,867)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-25"
+  },
+  "4aa89ac456a5a8d5e9dd271adb0606f0": {
+    "title": "unslothai/unsloth (⭐️ 80,209)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-25"
+  },
+  "aacdb4ba55326c0e64be6c4a0dafed44": {
+    "title": "google/adk-python (⭐️ 22,345)",
+    "url": "https://github.com/google/adk-python",
+    "reported_date": "2026-11-25"
+  },
+  "69405d61985a1cfc2066bb694efa11dd": {
+    "title": "dataelement/bisheng (⭐️ 12,430)",
+    "url": "https://github.com/dataelement/bisheng",
+    "reported_date": "2026-11-25"
+  },
+  "f6b9cc00abbcd0b390ecf99af3ab7c12": {
+    "title": "Nemotron-Labs-VisualCreation: Pixel as Code for Agentic Visual Creation",
+    "url": "https://huggingface.co/papers/2611.31358",
+    "reported_date": "2026-11-25"
+  },
+  "798d966fdc057223131b3268dc3e0517": {
+    "title": "ACAP: Asynchronous Coding Agents for Efficient Robot Control",
+    "url": "https://huggingface.co/papers/2611.31205",
+    "reported_date": "2026-11-25"
+  },
+  "80f033c78b93ab6ed4210ed8f76471cc": {
+    "title": "Self-Evolving Evaluation Environments for Computer-Use Agents",
+    "url": "https://huggingface.co/papers/2611.30962",
+    "reported_date": "2026-11-25"
+  },
+  "0e17fa3aae08363b1d3ec190a0f0bf18": {
+    "title": "Don't Sleep, Keep Watch: Proactive Perception for Computer-Use Agents",
+    "url": "https://huggingface.co/papers/2611.28947",
+    "reported_date": "2026-11-25"
   }
 }
