@@ -67,7 +67,7 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-25"
+    "reported_date": "2026-11-26"
   },
   "f57697e2b3d226f565953eb5f22ca7a2": {
     "title": "External sandboxes for coding agents",
@@ -105,9 +105,9 @@
     "reported_date": "2026-11-18"
   },
   "b8df0403ae46447ca30ee1becac56514": {
-    "title": "ModelEngine-Group/nexent (⭐️ 6,258)",
+    "title": "ModelEngine-Group/nexent (⭐️ 6,263)",
     "url": "https://github.com/ModelEngine-Group/nexent",
-    "reported_date": "2026-11-25"
+    "reported_date": "2026-11-26"
   },
   "3675292c9c3a28b6184e85c810102af2": {
     "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
@@ -558,5 +558,65 @@
     "title": "Don't Sleep, Keep Watch: Proactive Perception for Computer-Use Agents",
     "url": "https://huggingface.co/papers/2611.28947",
     "reported_date": "2026-11-25"
+  },
+  "f715b1d3320c161072a78cfc3bbca5f1": {
+    "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+    "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+    "reported_date": "2026-11-26"
+  },
+  "f2b9428295026618d1526524bf94a0b9": {
+    "title": "Quoting Scott Aaronson",
+    "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+    "reported_date": "2026-11-26"
+  },
+  "72c96ea8a6b91e438e57df5bfb745bc5": {
+    "title": "datasette-charts 0.3a0",
+    "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+    "reported_date": "2026-11-26"
+  },
+  "c04de8751e0abc353d523d7e37ce04d2": {
+    "title": "How Intentful uses dots to make more time for growth",
+    "url": "https://openai.com/business/customer-stories/intentful-dots",
+    "reported_date": "2026-11-26"
+  },
+  "063f590a45bf109d8cbfb25a19e63165": {
+    "title": "langgenius/dify (⭐️ 161,932)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-26"
+  },
+  "183af6644e27a164bf68d1ee4b55bb99": {
+    "title": "bytedance/deer-flow (⭐️ 85,837)",
+    "url": "https://github.com/bytedance/deer-flow",
+    "reported_date": "2026-11-26"
+  },
+  "07d8892eaf3d455eea8ac938284d62a4": {
+    "title": "unslothai/unsloth (⭐️ 80,278)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-26"
+  },
+  "1bdc9482dfef4dc7aac63b292ff231c3": {
+    "title": "tuya/TuyaOpen (⭐️ 1,963)",
+    "url": "https://github.com/tuya/TuyaOpen",
+    "reported_date": "2026-11-26"
+  },
+  "5421c2f7361ec82640086210308ddd88": {
+    "title": "VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation",
+    "url": "https://huggingface.co/papers/2611.34237",
+    "reported_date": "2026-11-26"
+  },
+  "0ee5583d801debdac60bcc0bdfa4a23c": {
+    "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+    "url": "https://huggingface.co/papers/2611.33144",
+    "reported_date": "2026-11-26"
+  },
+  "6ab87d61c5f380371c080d9cbf663fa0": {
+    "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
+    "url": "https://huggingface.co/papers/2611.34575",
+    "reported_date": "2026-11-26"
+  },
+  "1dad5fd309361d02dccf8be19ba8fc57": {
+    "title": "Mixture-of-Loops Transformer",
+    "url": "https://huggingface.co/papers/2611.34923",
+    "reported_date": "2026-11-26"
   }
 }

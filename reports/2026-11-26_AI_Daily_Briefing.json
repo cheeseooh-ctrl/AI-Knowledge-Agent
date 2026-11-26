@@ -1,0 +1,128 @@
+{
+  "daily_focus": "【预览演示模式】今日 AI 领域涵盖了学术前沿突破、热门开源智能体项目以及开发者社区深度实测。",
+  "breakthroughs": [
+    {
+      "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "original_title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "Quoting Scott Aaronson",
+      "original_title": "Quoting Scott Aaronson",
+      "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "datasette-charts 0.3a0",
+      "original_title": "datasette-charts 0.3a0",
+      "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "How Intentful uses dots to make more time for growth",
+      "original_title": "How Intentful uses dots to make more time for growth",
+      "url": "https://openai.com/business/customer-stories/intentful-dots",
+      "source": "OpenAI News",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging me",
+        "来自权威发布渠道：OpenAI News"
+      ]
+    }
+  ],
+  "open_source_tools": [
+    {
+      "name": "langgenius/dify (⭐️ 161,932)",
+      "url": "https://github.com/langgenius/dify",
+      "stars_or_tag": "⭐️ 242898",
+      "description": "[Python] ⭐️ 161,932 stars - Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack."
+    },
+    {
+      "name": "bytedance/deer-flow (⭐️ 85,837)",
+      "url": "https://github.com/bytedance/deer-flow",
+      "stars_or_tag": "⭐️ 171674",
+      "description": "[Python] ⭐️ 85,837 stars - An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
+    },
+    {
+      "name": "unslothai/unsloth (⭐️ 80,278)",
+      "url": "https://github.com/unslothai/unsloth",
+      "stars_or_tag": "⭐️ 80278",
+      "description": "[Python] ⭐️ 80,278 stars - Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
+    },
+    {
+      "name": "tuya/TuyaOpen (⭐️ 1,963)",
+      "url": "https://github.com/tuya/TuyaOpen",
+      "stars_or_tag": "⭐️ 2453",
+      "description": "[C] ⭐️ 1,963 stars - Next-gen AI+IoT framework for T2/T3/T5AI/ESP32/and more – Fast IoT and AI Agent hardware integration"
+    },
+    {
+      "name": "ModelEngine-Group/nexent (⭐️ 6,263)",
+      "url": "https://github.com/ModelEngine-Group/nexent",
+      "stars_or_tag": "⭐️ 1878",
+      "description": "[Python] ⭐️ 6,263 stars - Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes."
+    }
+  ],
+  "trending_papers": [
+    {
+      "title": "VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation",
+      "original_title": "VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation",
+      "url": "https://huggingface.co/papers/2611.34237",
+      "takeaway": "论文摘要: Code-driven video generation asks a coding agent to write and run rendering programs. This gives exact control over typography, data visualizations, synchronized audio, and multi-shot scenes, and it leaves an editable project behind. A program tha... (HF Upvotes: 48)"
+    },
+    {
+      "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+      "original_title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+      "url": "https://huggingface.co/papers/2611.33144",
+      "takeaway": "论文摘要: Learning for dexterous manipulation is limited by the scarcity of high-quality demonstrations: retargeting from human video is imprecise, teleoperation gives no force feedback to the operator, and exoskeleton-based collection is hard to scale up. ... (HF Upvotes: 39)"
+    },
+    {
+      "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
+      "original_title": "Sage-Med: Scaling Medical Multimodal Intelligence",
+      "url": "https://huggingface.co/papers/2611.34575",
+      "takeaway": "论文摘要: Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLM... (HF Upvotes: 42)"
+    },
+    {
+      "title": "Mixture-of-Loops Transformer",
+      "original_title": "Mixture-of-Loops Transformer",
+      "url": "https://huggingface.co/papers/2611.34923",
+      "takeaway": "论文摘要: Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as ... (HF Upvotes: 39)"
+    }
+  ],
+  "hot_discussions": [
+    {
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "summary": "HN 讨论热度: 280 点赞 / 118 条评论。讨论链接: https://news.ycombinator.com/item?id=48883305"
+    }
+  ],
+  "audit_report": {
+    "overall_score": 88,
+    "rounds": 1,
+    "dimension_scores": {
+      "anti_pr": 90,
+      "evidence_density": 88,
+      "actionability": 88,
+      "critical_balance": 86
+    },
+    "critique_summary": "【单机模拟模式】通过离线路由校验，符合用户画像偏好。",
+    "general_advice": "保持客观严谨。",
+    "user_role": "AI 架构师 / AI 产品经理 (FDE 交付专家)",
+    "suppressed_repeats": 6
+  }
+}
