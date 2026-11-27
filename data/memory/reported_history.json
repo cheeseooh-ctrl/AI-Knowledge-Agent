@@ -67,7 +67,7 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-26"
+    "reported_date": "2026-11-27"
   },
   "f57697e2b3d226f565953eb5f22ca7a2": {
     "title": "External sandboxes for coding agents",
@@ -105,9 +105,9 @@
     "reported_date": "2026-11-18"
   },
   "b8df0403ae46447ca30ee1becac56514": {
-    "title": "ModelEngine-Group/nexent (⭐️ 6,263)",
+    "title": "ModelEngine-Group/nexent (⭐️ 6,275)",
     "url": "https://github.com/ModelEngine-Group/nexent",
-    "reported_date": "2026-11-26"
+    "reported_date": "2026-11-27"
   },
   "3675292c9c3a28b6184e85c810102af2": {
     "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
@@ -618,5 +618,65 @@
     "title": "Mixture-of-Loops Transformer",
     "url": "https://huggingface.co/papers/2611.34923",
     "reported_date": "2026-11-26"
+  },
+  "ddbcef5ac05fdee9b4ab7f8984e8e8d2": {
+    "title": "Quoting Jack Despain Zhou",
+    "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+    "reported_date": "2026-11-27"
+  },
+  "61880fb2e5ca83aa6e18c40125372a58": {
+    "title": "The New York Times warns photographers not to update Photoshop over AI features",
+    "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+    "reported_date": "2026-11-27"
+  },
+  "e46138dfa9d9bcd59a894ee74d1b3764": {
+    "title": "How Gemini is changing the game for Golden State's organization and fans.",
+    "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+    "reported_date": "2026-11-27"
+  },
+  "cb85b227aae1c5569e22fc2b358c7a42": {
+    "title": "A more tailored Google Search that’s uniquely yours",
+    "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+    "reported_date": "2026-11-27"
+  },
+  "769760daf7ae62b7db4d78d117b05f35": {
+    "title": "langgenius/dify (⭐️ 161,987)",
+    "url": "https://github.com/langgenius/dify",
+    "reported_date": "2026-11-27"
+  },
+  "433c449f87dd8059a2ddf26a312e85ec": {
+    "title": "unslothai/unsloth (⭐️ 80,333)",
+    "url": "https://github.com/unslothai/unsloth",
+    "reported_date": "2026-11-27"
+  },
+  "434978f9bea06ffdf5ede3a897495410": {
+    "title": "langchain-ai/open-swe (⭐️ 11,268)",
+    "url": "https://github.com/langchain-ai/open-swe",
+    "reported_date": "2026-11-27"
+  },
+  "0ac23475e950e6415714f3cd243a7c60": {
+    "title": "google/adk-java (⭐️ 1,782)",
+    "url": "https://github.com/google/adk-java",
+    "reported_date": "2026-11-27"
+  },
+  "c1e842bbf3f068d78d682c2337d93973": {
+    "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+    "url": "https://huggingface.co/papers/2611.34232",
+    "reported_date": "2026-11-27"
+  },
+  "5ba15f675037fd61a811f50af02d8394": {
+    "title": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
+    "url": "https://huggingface.co/papers/2611.34051",
+    "reported_date": "2026-11-27"
+  },
+  "d0fadcdf99cb4484fd0c43a6b0718cd1": {
+    "title": "ProxyGenBench: Benchmarking Proxy-Guided Video Generation",
+    "url": "https://huggingface.co/papers/2611.34457",
+    "reported_date": "2026-11-27"
+  },
+  "6010768f64a76c18562951ba1372b837": {
+    "title": "Let Vision-Language Models Generate Images through Their Representations",
+    "url": "https://huggingface.co/papers/2611.31237",
+    "reported_date": "2026-11-27"
   }
 }
