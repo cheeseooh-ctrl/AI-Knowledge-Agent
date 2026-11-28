@@ -1,0 +1,128 @@
+{
+  "daily_focus": "【预览演示模式】今日 AI 领域涵盖了学术前沿突破、热门开源智能体项目以及开发者社区深度实测。",
+  "breakthroughs": [
+    {
+      "title": "datasette-mcp 0.4",
+      "original_title": "datasette-mcp 0.4",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-mcp/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "datasette-charts 0.4a0",
+      "original_title": "datasette-charts 0.4a0",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "Quoting Jack Despain Zhou",
+      "original_title": "Quoting Jack Despain Zhou",
+      "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+      "source": "Simon Willison Weblog",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "官方最新发布与进展更新",
+        "来自权威发布渠道：Simon Willison Weblog"
+      ]
+    },
+    {
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "original_title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "source": "OpenAI News",
+      "why_it_matters": "权威机构发布的最新技术动态或重大模型升级。",
+      "key_points": [
+        "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evide",
+        "来自权威发布渠道：OpenAI News"
+      ]
+    }
+  ],
+  "open_source_tools": [
+    {
+      "name": "bytedance/deer-flow (⭐️ 85,889)",
+      "url": "https://github.com/bytedance/deer-flow",
+      "stars_or_tag": "⭐️ 171778",
+      "description": "[Python] ⭐️ 85,889 stars - An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
+    },
+    {
+      "name": "hiyouga/LlamaFactory (⭐️ 76,314)",
+      "url": "https://github.com/hiyouga/LlamaFactory",
+      "stars_or_tag": "⭐️ 76314",
+      "description": "[Python] ⭐️ 76,314 stars - Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)"
+    },
+    {
+      "name": "AstrBotDevs/AstrBot (⭐️ 47,669)",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "stars_or_tag": "⭐️ 59586",
+      "description": "[Python] ⭐️ 47,669 stars - AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
+    },
+    {
+      "name": "thesysdev/openui (⭐️ 15,561)",
+      "url": "https://github.com/thesysdev/openui",
+      "stars_or_tag": "⭐️ 15561",
+      "description": "[TypeScript] ⭐️ 15,561 stars - The Open Standard for Generative UI"
+    },
+    {
+      "name": "ModelEngine-Group/nexent (⭐️ 6,286)",
+      "url": "https://github.com/ModelEngine-Group/nexent",
+      "stars_or_tag": "⭐️ 1885",
+      "description": "[Python] ⭐️ 6,286 stars - Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes."
+    }
+  ],
+  "trending_papers": [
+    {
+      "title": "Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models",
+      "original_title": "Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models",
+      "url": "https://huggingface.co/papers/2611.34813",
+      "takeaway": "论文摘要: Video generation models are increasingly evaluated as visual reasoners: given a first frame and a natural-language prompt, can the model produce the video in which the specified task is carried out? The paradigm is considered advantageous because ... (HF Upvotes: 61)"
+    },
+    {
+      "title": "What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models",
+      "original_title": "What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models",
+      "url": "https://huggingface.co/papers/2611.31619",
+      "takeaway": "论文摘要: A foundation model for time series is pretrained once and then asked to forecast series it has never seen, so the evidence for it is its score on held-out datasets. Such datasets are scarce, and a few public leaderboards carry most comparisons, ye... (HF Upvotes: 58)"
+    },
+    {
+      "title": "Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts",
+      "original_title": "Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts",
+      "url": "https://huggingface.co/papers/2611.28732",
+      "takeaway": "论文摘要: In-context learning (ICL) enables foundation models to perform unseen tasks from context without parameter updates. In robotic manipulation, a human video provides the context that specifies how a task should be performed. However, scaling human-v... (HF Upvotes: 34)"
+    },
+    {
+      "title": "StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation",
+      "original_title": "StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation",
+      "url": "https://huggingface.co/papers/2611.34290",
+      "takeaway": "论文摘要: Modern video foundation models generate high-quality short clips, but preserving long-video consistency and correctly depicting event-driven state changes remain challenging. Existing agentic workflows face these challenges because continual plann... (HF Upvotes: 27)"
+    }
+  ],
+  "hot_discussions": [
+    {
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "summary": "HN 讨论热度: 280 点赞 / 118 条评论。讨论链接: https://news.ycombinator.com/item?id=48883305"
+    }
+  ],
+  "audit_report": {
+    "overall_score": 88,
+    "rounds": 1,
+    "dimension_scores": {
+      "anti_pr": 90,
+      "evidence_density": 88,
+      "actionability": 88,
+      "critical_balance": 86
+    },
+    "critique_summary": "【单机模拟模式】通过离线路由校验，符合用户画像偏好。",
+    "general_advice": "保持客观严谨。",
+    "user_role": "AI 架构师 / AI 产品经理 (FDE 交付专家)",
+    "suppressed_repeats": 13
+  }
+}

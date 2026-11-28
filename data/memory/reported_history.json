@@ -67,7 +67,7 @@
   "2d4ef5a932a17b06cfc81e7029357c59": {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
     "url": "https://github.com/juggler-ai/juggler",
-    "reported_date": "2026-11-27"
+    "reported_date": "2026-11-28"
   },
   "f57697e2b3d226f565953eb5f22ca7a2": {
     "title": "External sandboxes for coding agents",
@@ -105,9 +105,9 @@
     "reported_date": "2026-11-18"
   },
   "b8df0403ae46447ca30ee1becac56514": {
-    "title": "ModelEngine-Group/nexent (⭐️ 6,275)",
+    "title": "ModelEngine-Group/nexent (⭐️ 6,286)",
     "url": "https://github.com/ModelEngine-Group/nexent",
-    "reported_date": "2026-11-27"
+    "reported_date": "2026-11-28"
   },
   "3675292c9c3a28b6184e85c810102af2": {
     "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
@@ -512,7 +512,7 @@
   "aa9fa9a5c01cd69be9c68f952cafccd8": {
     "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
     "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-    "reported_date": "2026-11-25"
+    "reported_date": "2026-11-28"
   },
   "0851e2f8574a675d1ae4832de7967691": {
     "title": "Searching for distant planets with Astra",
@@ -622,7 +622,7 @@
   "ddbcef5ac05fdee9b4ab7f8984e8e8d2": {
     "title": "Quoting Jack Despain Zhou",
     "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
-    "reported_date": "2026-11-27"
+    "reported_date": "2026-11-28"
   },
   "61880fb2e5ca83aa6e18c40125372a58": {
     "title": "The New York Times warns photographers not to update Photoshop over AI features",
@@ -678,5 +678,55 @@
     "title": "Let Vision-Language Models Generate Images through Their Representations",
     "url": "https://huggingface.co/papers/2611.31237",
     "reported_date": "2026-11-27"
+  },
+  "85b08a6ce37bcc84cf4f961eb66c4b6b": {
+    "title": "datasette-mcp 0.4",
+    "url": "https://simonwillison.net/2026/Nov/27/datasette-mcp/",
+    "reported_date": "2026-11-28"
+  },
+  "e60163913fb52793868bacfe29dc011f": {
+    "title": "datasette-charts 0.4a0",
+    "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/",
+    "reported_date": "2026-11-28"
+  },
+  "62804caa8d5b241c61eb0decd4ffbdce": {
+    "title": "bytedance/deer-flow (⭐️ 85,889)",
+    "url": "https://github.com/bytedance/deer-flow",
+    "reported_date": "2026-11-28"
+  },
+  "37e7454dee19afa55cab183a21171e5f": {
+    "title": "hiyouga/LlamaFactory (⭐️ 76,314)",
+    "url": "https://github.com/hiyouga/LlamaFactory",
+    "reported_date": "2026-11-28"
+  },
+  "716b6ff0311990e6bd1c3f03dd1e30d5": {
+    "title": "AstrBotDevs/AstrBot (⭐️ 47,669)",
+    "url": "https://github.com/AstrBotDevs/AstrBot",
+    "reported_date": "2026-11-28"
+  },
+  "38df1985b1003af29f96fb032cc251a4": {
+    "title": "thesysdev/openui (⭐️ 15,561)",
+    "url": "https://github.com/thesysdev/openui",
+    "reported_date": "2026-11-28"
+  },
+  "0a7197edb11ab4260e119a3765b0d53c": {
+    "title": "Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models",
+    "url": "https://huggingface.co/papers/2611.34813",
+    "reported_date": "2026-11-28"
+  },
+  "aeb20c40c8d0fe0bcf6e81774f1fc2e4": {
+    "title": "What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models",
+    "url": "https://huggingface.co/papers/2611.31619",
+    "reported_date": "2026-11-28"
+  },
+  "3d34559d2d71ebe81cf9850509e80551": {
+    "title": "Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts",
+    "url": "https://huggingface.co/papers/2611.28732",
+    "reported_date": "2026-11-28"
+  },
+  "c7cd901e8ef89b25ab71fcf035524158": {
+    "title": "StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation",
+    "url": "https://huggingface.co/papers/2611.34290",
+    "reported_date": "2026-11-28"
   }
 }
